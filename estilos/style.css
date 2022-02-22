@@ -1,144 +1,445 @@
-
 /*Reset CSS*/
 * {
     padding: 0;
     margin: 0;
 }
-
-/*Agrega una imagen al encabezado;agregando un borde y modificando su tamaño y posicion */
-header {
-    padding: 1.5rem;
-    margin-top: 1rem;
-    background-image: url(../multimedia/snack-conjunto.jpeg);
-    border-style: solid;
-}
-/*Agrega imagen de fondo*/
+/*Configuracion general del color de las paginas html*/
 body {
-    background-color: orange;
-
+    background-color: rgb(184, 181, 181);
 }
-/*lista desordenada de navegacion:modifica su tamaño y posicion*/
-ul {
-    list-style: none;
-    text-decoration: none;
-    font-size: 0;
-    
-
-}
-
-li {
-    display: inline-block;
-    width: 20%;
-    position: relative;
-    font-size: 20px;
-}
+/****GRID INDEX*****/
 
 
-/*Modifica posicion y tamaño del titulo principal*/
-.tituloPrincipal {
-    font-size: 3rem;
-    margin-left: 2rem;
+
+#gridAreaIndex {
+    display: grid;
+
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "bloqueTexto bloqueTexto  video video"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
 
 }
 
-/*Habilita posicionar video y texto de descripcion horizontalmente*/
-.textoYvideo {
-    display: flex;
-    flex-direction: row;
-}
+/*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 
-
-/*Modifica posicion,letra,color,bordes,tipo de letra de la casilla de texto descripcion*/
-.textoDescripcion {
-    display: flex;
-    padding: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: 10;
-    text-align: left;
-    border: 0.15rem solid #000000;
-    margin-left: 2rem;
-    margin-right: 8rem;
-    background-color: white
-}
-
-/* Modifica el color y posicionamiento de pie de pagina,se le agrega flex para ordenar formulario(si se elimina, desaparecen elementos de contacto)*/
-footer {
-    padding: 1rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    background-color: rgb(204, 136, 10);
-    display: flex;
-    flex-direction: column;
-
-}
-/* Modifica color y tamaño de las letras, tamaño de las casillas y posicion en columnas de los elementos del formulario*/
-.formulario {
-
-    margin-top: 1rem;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-      margin-left: 5rem;
-    margin-right: 80rem;
-
-
-
-
-}
-/*Modifica el tamaño de la letra del titulo contactos y lo centraliza en la pagina*/
-.tituloCentral {
-    font-size: xx-large;
+.alerta {
+    grid-area: notificacion;
+    background-color: rgb(139, 147, 165);
     display: flex;
     justify-content: center;
+    align-items: center;
+
 }
- /*Centraliza en la pagina,tamaño de letra y distribuye los elementos de contacto(facebook whatsapp mail) */
-.contactos {
+
+
+/*Configura lista de navegacion aplica a todos los HTML*/
+.listaNavegacion {
+    grid-area: navegacion;
+    background-image: url(../multimedia/snack-conjunto.jpeg); /*agrega una imagen de fondo*/
+    margin-left: 800px;
+    /*agrega margen para posicionar lista de nav. hacia la izquierda*/
     display: flex;
-    justify-content: center;
     justify-content: space-around;
-    font-size: large;
+    /*distribuye elementos de forma igualitaria*/
+    align-items: center;
+    /*posiciona el texto de manera central en el eje Y*/
 }
-/*Habilita flex, cambia de posicion los elementos y genera un espacio entre 2 elementos*/
-.contenedorNav{
+/*Elimina el subrayado en los enlaces de la lista de navegacion*/
+a{
+    text-decoration: none;
+
+}
+
+/*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/
+.listaNavegacion div{
+    background-color: rgb(223, 219, 219);
+    border: 0.1rem solid #000000; /*configuracion del borde*/
+
+}
+
+/*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
+.descripcionVideo {
+    grid-area: bloqueTexto;
     display: flex;
+    background-color: rgb(143, 158, 127);
+    padding: 1.5rem;
+    /*Configuracion padding(distancia entre letra y padding)*/
+    font-size: 1rem;
+    /*tamaño de la letra*/
+    font-family: 'Courier New', Courier, monospace;
+    /*fuente de letra*/
+    font-style: italic;
+    /*Letra cursiva*/
+    border: 0.5rem solid #000000;
+    /*tamaño y color del border*/
+    align-items: center;
+    /*Centraliza texto en el box*/
+    margin-left: 2rem;
+    /*agrega margen a la izquierda*/
+    margin-bottom: 5rem;
+    /*agrega margen inferior*/
+    margin-top: 2rem;
+    /*agrega margen superior*/
+
+}
+
+/*Index_video:Centraliza y agrega atributos a video de youtube*/
+.videoPrincipal {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    /*Centraliza video*/
+}
+
+/*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
+.casillasSus {
+    grid-area: casillasSus;
+    background-color: rgb(126, 126, 151);
+    display: flex;
+    align-items: center;
+    /* Ordena en el centro del eje X*/
+    justify-content: space-around;
+    /*distribuye los elementos dentro de la caja section en el eje x*/
+
+
+}
+
+/*FormulariosSuscripcionGeneral_titulo:Unicamente para agregan margen entre titulo y casilla de form*/
+.casillasSus form p {
+    background-color: aqua;
+    margin-bottom: 1rem;
+}
+
+/*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
+.contacto {
+    grid-area: contacto;
+    background-color: rgb(146, 37, 37);
+    display: flex;
+    flex-direction: column;
+    /*Ordena en columna texto-Contactos y enlaces*/
+    justify-content: center;
+    /* Ordena en el centro del eje Y texto-Contactos y enlaces*/
+    align-items: center;
+    /* Ordena en el centro del eje X texto-Contactos y enlaces*/
+
+}
+
+/*FooterGeneral_cajaDeEnlaces:Se ordena los elementos de enlace*/
+.enlacesContacto {
+    display: flex;
+    justify-content: space-around;
+    /*distribuye los elementos dentro de la caja section en el eje x*/
+}
+
+/*footerGeneral_cajaDeEnlaces_Div:Se utiliza para agrandar espacio entre los enlaces*/
+.enlacesContacto div {
+    display: flex;
+    padding-left: 6rem;
+    /*++espacio a la der.,valida space around de .enlacesContacto*/
+    padding-right: 6rem;
+    /*++espacio a la izq., valida space around de .enlacesContacto*/
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/****GRID GALERIA*****/
+#gridAreaGaleria {
+
+display: grid;
+
+grid-template-areas:
+    "notificacion notificacion notificacion notificacion"
+    "navegacion navegacion  navegacion navegacion"
+    "imagenes imagenes  imagenes imagenes"
+    "casillasSus casillasSus casillasSus  casillasSus"
+    "contacto contacto contacto contacto";
+grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
+/*Configura tamaño columnas*/
+grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
+/*Configura tamaño filas*/
+gap: 10px 10px;
+/*Configura tamaño margenes*/
+}
+/*Modifica atributos de las imagenes, del apartado Galeria*/
+.imagenesGaleria{
+grid-area: imagenes;
+display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/****GRID REPARTO*****/
+#gridAreaReparto{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "TextoMapa TextoMapa  Mapa Mapa"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+
+/*Se modifica atributos en el texto de Mapa del HTML reparto*/
+.descripcionMapaDeReparto{
+    grid-area: TextoMapa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+/*Se modifica atributos de la imagen del Mapa del HTML reparto*/
+.mapaReparto{
+    grid-area: Mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/****GRID PRODUCTOS*****/
+#gridAreaProductos{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "lista lista  lista lista"
+       "casillasSus casillasSus casillasSus  casillasSus"      
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+
+/*Se modifica atributos del apartado productos, posicion*/
+.listaProductos{
+    grid-area: lista;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/****GRID GUIA*****/
+#gridAreaGuia{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "textoImagen textoImagen  textoImagen textoImagen"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+/*Caja que conforma el area de texto e imagenes de la pagina guia*/
+.textoImagenesGuia{
+    grid-area: textoImagen;
+    display: flex;
+    flex-direction: column;
+}
+
+/*cambia posicion entre caja de texto e imagen*/
+.textoImagenInvertido{
+    display: flex;
+    margin-top: 1.5rem;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+}
+
+/*Modifica atributos generales de la seccion caja de texto e imagen de la pagina guia*/
+.textoImagen{
+    display: flex;
+    margin-top: 1.5rem;
     
 }
-/*Habilita flex y genera un espacio entre la imagen y el texto de la seccion de*/
-.mapaDeReparto{
-        display: flex;
-        justify-content: space-evenly;
+
+/*Modifica los valores de las cajas de texto en la pagina guia*/
+.cajaTexto{
+    display: flex;
+    background-color: rgb(143, 158, 127);
+    padding: 1.5rem;
+    /*Configuracion padding(distancia entre letra y padding)*/
+    font-size: 1rem;
+    /*tamaño de la letra*/
+    font-family: 'Courier New', Courier, monospace;
+    /*fuente de letra*/
+    font-style: italic;
+    /*Letra cursiva*/
+    border: 0.5rem solid #000000;
+    /*tamaño y color del border*/
+    align-items: center;
+    /*Centraliza texto en el box*/
+    margin-left: 2rem;
+    /*agrega margen a la izquierda*/
+    margin-bottom: 5rem;
+    /*agrega margen inferior*/
+    margin-top: 2rem;
+    /*agrega margen superior*/
 
 }
 
-/*Modifica valores del texto principal de la seccion reparto*/
-.descripcionMapaDeReparto{
-    display: flex;
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+
+/*****PAGINA INDEX*****/
+@media screen and (max-width:600px) {
+    #gridAreaIndex{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion "
+        "navegacion"
+        "video"
+        "bloqueTexto"
+        "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
     flex-direction: column;
-    justify-content:space-evenly;
-    margin-left: 15rem;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
 
 }
-/*modificar nombre de clase contactos*/
-.imagenesGaleria{
-    display: flex;
+/*****PAGINA GALERIA*****/
+@media screen and (max-width:600px) {
+    #gridAreaGaleria{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "imagenes"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
     flex-direction: column;
-}
-/*Genera un espacio de margen*/
-.textoImagenesGuia{
-    display: flex;
-    margin-top: 1.5rem;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
 
 }
 
-/*Invierte la posicion de los elementos*/
-.textoImagenesGuiaInvertido{
-    display: flex;
-    margin-top: 1.5rem;
-    flex-direction: row-reverse;
+/*****PAGINA REPARTO*****/
+@media screen and (max-width:600px) {
+    #gridAreaReparto{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "Mapa"
+        "TextoMapa"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+
+}
+
+/*****PAGINA PRODUCTOS*****/
+@media screen and (max-width:600px) {
+    #gridAreaProductos{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "lista"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+
+}
+
+
+/*****PAGINA GUIA*****/
+@media screen and (max-width:600px) {
+    #gridAreaGuia{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "textoImagen"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
 
 }

@@ -5,72 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./multimedia/icono-camion.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/icono-camion.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Distribuidora V.O.R.</title></head>
 </head>
-
-<body>
-    <header>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="guia.html">Guia de compra</a>
-            </li>
-            <li>
-                <a href="productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="galeria.html">Galeria</a>
-            </li>
-            <li>
-                <a href="reparto.html">Zona de reparto</a>
-            </li>
-        </ul>
+<!--Se asigna un grid a esta pagina HTML-->
+<body id="gridAreaProductos">
+<!--mensaje de notificacion superior-->
+    <header class="alerta">
+        <p> alerta de notificaciones</p>
     </header>
-
+        
+        <!--Lista de navegacion-->
        
-    <nav>
+        <nav class="listaNavegacion">
+            <div>
+                <a href="../index.html">Inicio</a>
+            </div>
+            <div>
+                <a href="guia.html">Guia de compra</a>
+            </div>
+            <div>
+    
+                <a href="productos.html">Productos</a>
+            </div>
+            <div>
+    
+                <a href="galeria.html">Galeria</a>
+            
+            </div>
+            <div>
+                <a href="reparto.html">Zona de reparto</a>
+            </div>
+    
+        </nav>
+               
+        <!--titulo y enlace de para ver un excell con los productos disponibles-->
+    <section class="listaProductos">
     <h1 class="tituloCentral">Listado de productos</h1>
     <p class="tituloCentral"><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8EEeKnCbHd2Uk0k5uLScR05UbTyJ_SlBejPyH_Aoqzaq_wy10aAsOm23xyq2G7E-d-m-pDpA7BfFc/pub?output=xlsx">Verificar</a></p>
-    </nav>
+    </section>
 
-    <footer>
-        <form class="formulario">
+      <!--Formularios de inscripcion-->
+      <section class="casillasSus">
+        <form>
             <p>Suscripcion por notificacion por whatsapp para ofertas</p>
             <label for="telefono-cliente">Telefono</label>
             <input type="text" name="telefono-cliente">
             <input type="submit" value="Suscribirse">
         </form>
 
-        <form class="formulario">
+        <form>
             <p>Suscripcion por notificacion por mail para ofertas</p>
             <label for="email-cliente">email</label>
             <input type="text" name="emal-cliente">
             <input type="submit" value="Suscribirse">
         </form>
+    </section>
 
-
-        <section >
-            <h3 class="tituloCentral">
-                Contactos
-            </h3>
-            <div class="contactos">
-            <p>
+<!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
+    <footer class="contacto">
+        <h3>
+            Contactos
+        </h3>
+        <section class="enlacesContacto">
+            <div>
                 <a href="https://www.facebook.com/negocioGenerico">facebook</a>
-            </p>
-            <p>
+            </div>
+            <div>
                 <a href="https://api.whatsapp.com/send?phone=5491111111111">whatsapp</a>
-            </p>
-            <p>
+            </div>
+            <div>
                 <a href="mailto:negocioGenerico@gmail.com">mail</a>
-            </p>
-        </div>
+            </div>
         </section>
-
     </footer>
+
 </body>
 
 </html>

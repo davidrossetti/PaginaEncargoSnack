@@ -5,87 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./multimedia/icono-camion.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../multimedia/icono-camion.png" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Distribuidora V.O.R.</title>
 </head>
-</head>
 
-<body>
-    <header>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="guia.html">Guia de compra</a>
-            </li>
-            <li>
-                <a href="productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="galeria.html">Galeria</a>
-            </li>
-            <li>
-                <a href="reparto.html">Zona de reparto</a>
-            </li>
-        </ul>
-    </header>
+<!--Se asigna un grid a esta pagina HTML-->
 
-    <nav class="textoImagenesGuia">
+<body id="gridAreaGuia">
+   <!--mensaje de notificacion superior-->
+   <header class="alerta">
+    <p> alerta de notificaciones</p>
+</header>
+    
+    <!--Lista de navegacion-->
+   
+    <nav class="listaNavegacion">
         <div>
-            <section class="textoImagenesGuia">
-                <div class="textoDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
+            <a href="../index.html">Inicio</a>
+        </div>
+        <div>
+            <a href="guia.html">Guia de compra</a>
+        </div>
+        <div>
+
+            <a href="productos.html">Productos</a>
+        </div>
+        <div>
+
+            <a href="galeria.html">Galeria</a>
+        
+        </div>
+        <div>
+            <a href="reparto.html">Zona de reparto</a>
+        </div>
+
+    </nav>
+
+
+     <!-- Cajas de Texto e iamgenes-->
+
+    <section class="textoImagenesGuia">
+        
+            <section class="textoImagen">
+                <div class="cajaTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
                 <div><img src="../multimedia/ejemplo-guia.JPG" alt="imagenGuia1"></div>
 
             </section>
-            <section class="textoImagenesGuiaInvertido">
-                <div class="textoDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
+            <section class="textoImagenInvertido">
+                <div class="cajaTexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
                 <div><img src="../multimedia/ejemplo-guia.JPG" alt="imagenGuia2"></div>
             </section>
 
-            <section class="textoImagenesGuia">
-                <div class="textoDescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
+            <section class="textoImagen">
+                <div class="cajaTexto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat nesciunt quasi non tempore cumque labore corrupti harum repudiandae, dicta minima et minus debitis nisi nulla ducimus impedit dolore voluptatum?</div>
                 <div><img src="../multimedia/ejemplo-guia.JPG" alt="imagenGuia3"></div>
 
             </section>
 
 
-    </nav>
-    <footer>
-        <form class="formulario">
+        </section>
+
+
+     <!--Formularios de inscripcion-->
+      <section class="casillasSus">
+        <form>
             <p>Suscripcion por notificacion por whatsapp para ofertas</p>
             <label for="telefono-cliente">Telefono</label>
             <input type="text" name="telefono-cliente">
             <input type="submit" value="Suscribirse">
         </form>
 
-        <form class="formulario">
+        <form>
             <p>Suscripcion por notificacion por mail para ofertas</p>
             <label for="email-cliente">email</label>
             <input type="text" name="emal-cliente">
             <input type="submit" value="Suscribirse">
         </form>
+    </section>
 
-
-        <section>
-            <h3 class="tituloCentral">
-                Contactos
-            </h3>
-            <div class="contactos">
-                <p>
-                    <a href="https://www.facebook.com/negocioGenerico">facebook</a>
-                </p>
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=5491111111111">whatsapp</a>
-                </p>
-                <p>
-                    <a href="mailto:negocioGenerico@gmail.com">mail</a>
-                </p>
+<!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
+    <footer class="contacto">
+        <h3>
+            Contactos
+        </h3>
+        <section class="enlacesContacto">
+            <div>
+                <a href="https://www.facebook.com/negocioGenerico">facebook</a>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=5491111111111">whatsapp</a>
+            </div>
+            <div>
+                <a href="mailto:negocioGenerico@gmail.com">mail</a>
             </div>
         </section>
-
     </footer>
+
 </body>
 
 </html>
