@@ -5,7 +5,7 @@
 }
 /*Configuracion general del color de las paginas html*/
 body {
-    background-color: rgb(184, 181, 181);
+    background-color: rgb(249, 199, 79);
 }
 /****GRID INDEX*****/
 
@@ -33,10 +33,14 @@ body {
 
 .alerta {
     grid-area: notificacion;
-    background-color: rgb(139, 147, 165);
+    background-color: rgb(249, 65, 68);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 2rem;
+
 
 }
 
@@ -52,25 +56,35 @@ body {
     /*distribuye elementos de forma igualitaria*/
     align-items: center;
     /*posiciona el texto de manera central en el eje Y*/
+    border-radius: 1rem;
+
 }
 /*Elimina el subrayado en los enlaces de la lista de navegacion*/
-a{
-    text-decoration: none;
+.listaNavegacion a{
+text-decoration: none;
+font-size: 20px;
+
 
 }
 
 /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/
 .listaNavegacion div{
-    background-color: rgb(223, 219, 219);
+    background-color: rgb(255, 249, 249);
     border: 0.1rem solid #000000; /*configuracion del borde*/
-
+ 
+        transition: all 2s;
 }
+.listaNavegacion div:hover{
+    background-color: rgb(153, 153, 206);
+    border-radius: 20px;
+}
+
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
     grid-area: bloqueTexto;
     display: flex;
-    background-color: rgb(143, 158, 127);
+    background-color: rgb(248, 150, 30);
     padding: 1.5rem;
     /*Configuracion padding(distancia entre letra y padding)*/
     font-size: 1rem;
@@ -79,7 +93,7 @@ a{
     /*fuente de letra*/
     font-style: italic;
     /*Letra cursiva*/
-    border: 0.5rem solid #000000;
+    border: 0.1rem solid #000000;
     /*tamaño y color del border*/
     align-items: center;
     /*Centraliza texto en el box*/
@@ -89,7 +103,14 @@ a{
     /*agrega margen inferior*/
     margin-top: 2rem;
     /*agrega margen superior*/
+    border-radius: 2rem;
+    transition: all 2s;
 
+
+}
+
+.descripcionVideo:hover{
+    background-color: rgb(255, 255, 255);
 }
 
 /*Index_video:Centraliza y agrega atributos a video de youtube*/
@@ -98,31 +119,45 @@ a{
     display: flex;
     justify-content: center;
     /*Centraliza video*/
+
 }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 .casillasSus {
     grid-area: casillasSus;
-    background-color: rgb(126, 126, 151);
+    background-color: rgb(144, 190, 109);
     display: flex;
     align-items: center;
     /* Ordena en el centro del eje X*/
     justify-content: space-around;
     /*distribuye los elementos dentro de la caja section en el eje x*/
-
+    transition: all 1s;
+    border-radius: 2rem;
 
 }
+
+.casillasSus:hover{
+    background-color: rgb(73, 112, 112);
+    font-size: 20px;
+    color: #ffffff;
+}
+
 
 /*FormulariosSuscripcionGeneral_titulo:Unicamente para agregan margen entre titulo y casilla de form*/
 .casillasSus form p {
-    background-color: aqua;
+    background-color: rgb(73, 112, 112);
     margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+
+
 }
+
 
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
     grid-area: contacto;
-    background-color: rgb(146, 37, 37);
+    background-color: rgb(87, 117, 144);
     display: flex;
     flex-direction: column;
     /*Ordena en columna texto-Contactos y enlaces*/
@@ -130,14 +165,30 @@ a{
     /* Ordena en el centro del eje Y texto-Contactos y enlaces*/
     align-items: center;
     /* Ordena en el centro del eje X texto-Contactos y enlaces*/
+    border-radius: 2rem;
+    transition: all 2s;
 
 }
+.contacto:hover{
+    background-color: rgb(65, 87, 107);
+      margin-left: 170px;
+    margin-right: 170px;
+}
+ .contacto h3{
+     color: aliceblue;
+     justify-content: center;
+     align-items: center;
+
+
+ }
 
 /*FooterGeneral_cajaDeEnlaces:Se ordena los elementos de enlace*/
 .enlacesContacto {
     display: flex;
     justify-content: space-around;
     /*distribuye los elementos dentro de la caja section en el eje x*/
+
+
 }
 
 /*footerGeneral_cajaDeEnlaces_Div:Se utiliza para agrandar espacio entre los enlaces*/
@@ -148,6 +199,9 @@ a{
     padding-right: 6rem;
     /*++espacio a la izq., valida space around de .enlacesContacto*/
     background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+
+
 }
 
 
@@ -323,16 +377,28 @@ display: flex;
     .listaNavegacion{
     flex-direction: column;
     margin-left: 0%;
-    justify-content: center;   
+    justify-content: center;
  }
+
+
+
  .casillasSus{
      flex-direction: column;
  }
 
  .enlacesContacto{
      flex-direction: column;
+     transition: 0s;
  }
 
+
+ .enlacesContacto div{
+     margin-top: 20px;
+     transition: 0s;
+ }
+ .enlacesContacto div:hover{
+     margin: 0.2px;
+ }
 }
 /*****PAGINA GALERIA*****/
 @media screen and (max-width:600px) {
@@ -359,6 +425,9 @@ display: flex;
      flex-direction: column;
  }
 
+ .enlacesContacto div{
+    margin-top: 20px;
+}
 }
 
 /*****PAGINA REPARTO*****/
@@ -386,7 +455,9 @@ display: flex;
  .enlacesContacto{
      flex-direction: column;
  }
-
+ .enlacesContacto div{
+    margin-top: 20px;
+}
 }
 
 /*****PAGINA PRODUCTOS*****/
@@ -413,7 +484,9 @@ display: flex;
  .enlacesContacto{
      flex-direction: column;
  }
-
+ .enlacesContacto div{
+    margin-top: 20px;
+}
 }
 
 
@@ -441,5 +514,13 @@ display: flex;
  .enlacesContacto{
      flex-direction: column;
  }
-
+ .enlacesContacto div{
+    margin-top: 20px;
 }
+}
+
+
+
+   
+
+
