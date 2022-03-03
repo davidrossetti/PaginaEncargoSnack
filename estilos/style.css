@@ -225,13 +225,18 @@ gap: 10px 10px;
 /*Configura tamaño margenes*/
 }
 /*Modifica atributos de las imagenes, del apartado Galeria*/
-.imagenesGaleria{
+/*.imagenesGaleria{
 grid-area: imagenes;
 display: flex;
-   flex-direction: column;
-    justify-content: center;
-    align-items: center;
+       justify-content: center;
+}*/
+
+.imagenesGaleria img{
+height: 550px;
+width: 500px;
+
 }
+
 
 /****GRID REPARTO*****/
 #gridAreaReparto{
@@ -373,6 +378,12 @@ display: flex;
         "casillasSus"
         "contacto";
     }
+
+    .alerta{
+        font-size: 10px;
+
+
+    }
    
     .listaNavegacion{
     flex-direction: column;
@@ -397,7 +408,7 @@ display: flex;
      transition: 0s;
  }
  .enlacesContacto div:hover{
-     margin: 0.2px;
+     margin: 1px;
  }
 }
 /*****PAGINA GALERIA*****/
