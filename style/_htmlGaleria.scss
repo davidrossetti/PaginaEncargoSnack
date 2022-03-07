@@ -1,0 +1,36 @@
+
+
+/****GRID GALERIA*****/
+#gridAreaGaleria {
+
+    display: grid;
+    
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "imagenes imagenes  imagenes imagenes"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+    }
+    /*Modifica atributos de las imagenes, del apartado Galeria*/
+    /*.imagenesGaleria{
+    grid-area: imagenes;
+    display: flex;
+           justify-content: center;
+    }*/
+    
+    .imagenesGaleria img{
+    height: 550px;
+    width: 500px;
+    
+    }
+
+    /***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/

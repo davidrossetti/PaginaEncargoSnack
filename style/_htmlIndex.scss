@@ -1,0 +1,139 @@
+
+/****GRID INDEX*****/
+#gridAreaIndex {
+    display: grid;
+
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "bloqueTexto bloqueTexto  video video"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+
+}
+
+/*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
+.descripcionVideo {
+    grid-area: bloqueTexto;
+    display: flex;
+    background-color: rgb(248, 150, 30);
+    padding: 1.5rem;
+    /*Configuracion padding(distancia entre letra y padding)*/
+    font-size: 1rem;
+    /*tamaño de la letra*/
+    font-family: 'Courier New', Courier, monospace;
+    /*fuente de letra*/
+    font-style: italic;
+    /*Letra cursiva*/
+    border: 0.1rem solid #000000;
+    /*tamaño y color del border*/
+    align-items: center;
+    /*Centraliza texto en el box*/
+    margin-left: 2rem;
+    /*agrega margen a la izquierda*/
+    margin-bottom: 5rem;
+    /*agrega margen inferior*/
+    margin-top: 2rem;
+    /*agrega margen superior*/
+    border-radius: 2rem;
+    transition: all 2s;
+
+
+}
+
+.descripcionVideo:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+/*Index_video:Centraliza y agrega atributos a video de youtube*/
+.videoPrincipal {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    /*Centraliza video*/
+
+}
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+/*****PAGINA INDEX*****/
+@media screen and (max-width:600px) {
+    #gridAreaIndex{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion "
+        "navegacion"
+        "video"
+        "bloqueTexto"
+        "casillasSus"
+        "contacto";
+    }
+
+    .alerta{
+        font-size: 10px;
+
+
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;
+ }
+
+
+
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+     transition: 0s;
+ }
+
+
+ .enlacesContacto div{
+     margin-top: 20px;
+     transition: 0s;
+ }
+ .enlacesContacto div:hover{
+     margin: 1px;
+ }
+}
+/*****PAGINA GALERIA*****/
+@media screen and (max-width:600px) {
+    #gridAreaGaleria{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "imagenes"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+
+ .enlacesContacto div{
+    margin-top: 20px;
+}
+}

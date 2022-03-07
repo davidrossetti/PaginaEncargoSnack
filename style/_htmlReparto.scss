@@ -1,0 +1,72 @@
+
+
+/****GRID REPARTO*****/
+#gridAreaReparto{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "TextoMapa TextoMapa  Mapa Mapa"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+
+/*Se modifica atributos en el texto de Mapa del HTML reparto*/
+.descripcionMapaDeReparto{
+    grid-area: TextoMapa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+/*Se modifica atributos de la imagen del Mapa del HTML reparto*/
+.mapaReparto{
+    grid-area: Mapa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+
+
+/*****PAGINA REPARTO*****/
+@media screen and (max-width:600px) {
+    #gridAreaReparto{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "Mapa"
+        "TextoMapa"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+ .enlacesContacto div{
+    margin-top: 20px;
+}
+}

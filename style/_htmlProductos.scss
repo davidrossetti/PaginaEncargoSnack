@@ -1,0 +1,61 @@
+
+
+
+/****GRID PRODUCTOS*****/
+#gridAreaProductos{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "lista lista  lista lista"
+       "casillasSus casillasSus casillasSus  casillasSus"      
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+
+/*Se modifica atributos del apartado productos, posicion*/
+.listaProductos{
+    grid-area: lista;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+
+/*****PAGINA PRODUCTOS*****/
+@media screen and (max-width:600px) {
+    #gridAreaProductos{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "lista"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+ .enlacesContacto div{
+    margin-top: 20px;
+}
+}

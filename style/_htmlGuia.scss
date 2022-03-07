@@ -1,0 +1,98 @@
+
+
+/****GRID GUIA*****/
+#gridAreaGuia{
+    display: grid;
+    grid-template-areas:
+        "notificacion notificacion notificacion notificacion"
+        "navegacion navegacion  navegacion navegacion"
+        "textoImagen textoImagen  textoImagen textoImagen"
+        "casillasSus casillasSus casillasSus  casillasSus"
+        "contacto contacto contacto contacto";
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    /*Configura tamaño columnas*/
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
+    /*Configura tamaño filas*/
+    gap: 10px 10px;
+    /*Configura tamaño margenes*/
+}
+/*Caja que conforma el area de texto e imagenes de la pagina guia*/
+.textoImagenesGuia{
+    grid-area: textoImagen;
+    display: flex;
+    flex-direction: column;
+}
+
+/*cambia posicion entre caja de texto e imagen*/
+.textoImagenInvertido{
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row-reverse;
+}
+
+/*Modifica atributos generales de la seccion caja de texto e imagen de la pagina guia*/
+.textoImagen{
+    display: flex;
+    margin-top: 1.5rem;
+    
+}
+
+/*Modifica los valores de las cajas de texto en la pagina guia*/
+.cajaTexto{
+    display: flex;
+    background-color: rgb(143, 158, 127);
+    padding: 1.5rem;
+    /*Configuracion padding(distancia entre letra y padding)*/
+    font-size: 1rem;
+    /*tamaño de la letra*/
+    font-family: 'Courier New', Courier, monospace;
+    /*fuente de letra*/
+    font-style: italic;
+    /*Letra cursiva*/
+    border: 0.5rem solid #000000;
+    /*tamaño y color del border*/
+    align-items: center;
+    /*Centraliza texto en el box*/
+    margin-left: 2rem;
+    /*agrega margen a la izquierda*/
+    margin-bottom: 5rem;
+    /*agrega margen inferior*/
+    margin-top: 2rem;
+    /*agrega margen superior*/
+
+}
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/
+/*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+
+
+
+/*****PAGINA GUIA*****/
+@media screen and (max-width:600px) {
+    #gridAreaGuia{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "textoImagen"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+ .enlacesContacto div{
+    margin-top: 20px;
+}
+}

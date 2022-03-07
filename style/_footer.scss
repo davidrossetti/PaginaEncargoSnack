@@ -1,0 +1,82 @@
+
+/*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
+.casillasSus {
+    grid-area: casillasSus;
+    background-color: rgb(144, 190, 109);
+    display: flex;
+    align-items: center;
+    /* Ordena en el centro del eje X*/
+    justify-content: space-around;
+    /*distribuye los elementos dentro de la caja section en el eje x*/
+    transition: all 1s;
+    border-radius: 2rem;
+
+}
+
+.casillasSus:hover{
+    background-color: rgb(73, 112, 112);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+/*FormulariosSuscripcionGeneral_titulo:Unicamente para agregan margen entre titulo y casilla de form*/
+.casillasSus form p {
+    background-color: rgb(73, 112, 112);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: aliceblue;
+
+
+}
+
+
+/*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
+.contacto {
+    grid-area: contacto;
+    background-color: rgb(87, 117, 144);
+    display: flex;
+    flex-direction: column;
+    /*Ordena en columna texto-Contactos y enlaces*/
+    justify-content: center;
+    /* Ordena en el centro del eje Y texto-Contactos y enlaces*/
+    align-items: center;
+    /* Ordena en el centro del eje X texto-Contactos y enlaces*/
+    border-radius: 2rem;
+    transition: all 2s;
+
+}
+.contacto:hover{
+    background-color: rgb(65, 87, 107);
+      margin-left: 170px;
+    margin-right: 170px;
+}
+ .contacto h3{
+     color: aliceblue;
+     justify-content: center;
+     align-items: center;
+
+
+ }
+
+/*FooterGeneral_cajaDeEnlaces:Se ordena los elementos de enlace*/
+.enlacesContacto {
+    display: flex;
+    justify-content: space-around;
+    /*distribuye los elementos dentro de la caja section en el eje x*/
+
+
+}
+
+/*footerGeneral_cajaDeEnlaces_Div:Se utiliza para agrandar espacio entre los enlaces*/
+.enlacesContacto div {
+    display: flex;
+    padding-left: 6rem;
+    /*++espacio a la der.,valida space around de .enlacesContacto*/
+    padding-right: 6rem;
+    /*++espacio a la izq., valida space around de .enlacesContacto*/
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+
+
+}

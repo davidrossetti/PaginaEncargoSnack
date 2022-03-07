@@ -1,0 +1,48 @@
+/*Configura "la alerta de notificaciones" aplica a todos los HTML*/
+
+.alerta {
+    grid-area: notificacion;
+    background-color: rgb(249, 65, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 2rem;
+
+
+}
+
+/*Configura lista de navegacion aplica a todos los HTML*/
+.listaNavegacion {
+    grid-area: navegacion;
+    background-image: url(../multimedia/snack-conjunto.jpeg); /*agrega una imagen de fondo*/
+    margin-left: 800px;
+    /*agrega margen para posicionar lista de nav. hacia la izquierda*/
+    display: flex;
+    justify-content: space-around;
+    /*distribuye elementos de forma igualitaria*/
+    align-items: center;
+    /*posiciona el texto de manera central en el eje Y*/
+    border-radius: 1rem;
+
+}
+/*Elimina el subrayado en los enlaces de la lista de navegacion*/
+.listaNavegacion a{
+text-decoration: none;
+font-size: 20px;
+
+
+}
+
+/*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/
+.listaNavegacion div{
+    background-color: rgb(255, 249, 249);
+    border: 0.1rem solid #000000; /*configuracion del borde*/
+ 
+        transition: all 2s;
+}
+.listaNavegacion div:hover{
+    background-color: rgb(153, 153, 206);
+    border-radius: 20px;
+}
