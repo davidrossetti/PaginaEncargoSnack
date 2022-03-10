@@ -31,23 +31,21 @@ body {
   /*distribuye elementos de forma igualitaria*/
   align-items: center;
   /*posiciona el texto de manera central en el eje Y*/
-  border-radius: 1rem; }
-
-/*Elimina el subrayado en los enlaces de la lista de navegacion*/
-.listaNavegacion a {
-  text-decoration: none;
-  font-size: 20px; }
-
-/*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/
-.listaNavegacion div {
-  background-color: #fff9f9;
-  border: 0.1rem solid #000000;
-  /*configuracion del borde*/
-  transition: all 2s; }
-
-.listaNavegacion div:hover {
-  background-color: #9999ce;
-  border-radius: 20px; }
+  border-radius: 1rem;
+  /*Elimina el subrayado en los enlaces de la lista de navegacion*/
+  /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/ }
+  .listaNavegacion a {
+    text-decoration: none;
+    font-size: 20px; }
+  .listaNavegacion div {
+    background-color: #fff9f9;
+    border: 0.1rem solid #000000;
+    /*configuracion del borde*/
+    transition: all 2s;
+    /*cambia el formato del boton al seleccionarlo*/ }
+    .listaNavegacion div:hover {
+      background-color: #9999ce;
+      border-radius: 20px; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 .casillasSus {
@@ -59,19 +57,18 @@ body {
   justify-content: space-around;
   /*distribuye los elementos dentro de la caja section en el eje x*/
   transition: all 1s;
-  border-radius: 2rem; }
-
-.casillasSus:hover {
-  background-color: #497070;
-  font-size: 20px;
-  color: #ffffff; }
-
-/*FormulariosSuscripcionGeneral_titulo:Unicamente para agregan margen entre titulo y casilla de form*/
-.casillasSus form p {
-  background-color: #497070;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  color: aliceblue; }
+  border-radius: 2rem;
+  /*Cambia color de la casilla suscripcion */
+  /*Agregan margen entre titulo y casilla de form*/ }
+  .casillasSus:hover {
+    background-color: #497070;
+    font-size: 20px;
+    color: #ffffff; }
+  .casillasSus form p {
+    background-color: #497070;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: aliceblue; }
 
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
@@ -85,38 +82,40 @@ body {
   align-items: center;
   /* Ordena en el centro del eje X texto-Contactos y enlaces*/
   border-radius: 2rem;
-  transition: all 2s; }
+  transition: all 2s;
+  /*Cambia margen de la casilla contacto posicionar mouse sobre la casilla*/
+  /*Cambia color y posicion del titulo de la casiila contactos*/ }
+  .contacto:hover {
+    margin-left: 170px;
+    margin-right: 170px; }
+  .contacto h3 {
+    color: aliceblue;
+    justify-content: center;
+    align-items: center; }
 
-.contacto:hover {
-  background-color: #41576b;
-  margin-left: 170px;
-  margin-right: 170px; }
-
-.contacto h3 {
-  color: aliceblue;
-  justify-content: center;
-  align-items: center; }
-
-/*FooterGeneral_cajaDeEnlaces:Se ordena los elementos de enlace*/
+/*Se ordena los elementos de enlace*/
 .enlacesContacto {
   display: flex;
   justify-content: space-around;
-  /*distribuye los elementos dentro de la caja section en el eje x*/ }
-
-/*footerGeneral_cajaDeEnlaces_Div:Se utiliza para agrandar espacio entre los enlaces*/
-.enlacesContacto div {
-  display: flex;
-  padding-left: 6rem;
-  /*++espacio a la der.,valida space around de .enlacesContacto*/
-  padding-right: 6rem;
-  /*++espacio a la izq., valida space around de .enlacesContacto*/
-  background-color: white;
-  border-radius: 2rem; }
+  /*distribuye los elementos dentro de la caja section en el eje x*/
+  /*Se utiliza para agrandar espacio entre los enlaces*/ }
+  .enlacesContacto div {
+    display: flex;
+    padding-left: 6rem;
+    /*++espacio a la der.,valida space around de .enlacesContacto*/
+    padding-right: 6rem;
+    /*++espacio a la izq., valida space around de .enlacesContacto*/
+    background-color: white;
+    border-radius: 2rem; }
 
 /****GRID INDEX*****/
 #gridAreaIndex {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion"
+ "navegacion navegacion  navegacion navegacion"
+ "bloqueTexto bloqueTexto  video video"
+ "casillasSus casillasSus casillasSus  casillasSus"
+ "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
@@ -149,9 +148,9 @@ body {
   /*agrega margen superior*/
   border-radius: 2rem;
   transition: all 2s; }
-
-.descripcionVideo:hover {
-  background-color: white; }
+  .descripcionVideo:hover {
+    background-color: white;
+    /*Cambiar de color el recuadro de texto al posicionar el mouse*/ }
 
 /*Index_video:Centraliza y agrega atributos a video de youtube*/
 .videoPrincipal {
@@ -167,44 +166,42 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaIndex {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion " "navegacion" "video" "bloqueTexto" "casillasSus" "contacto"; }
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "notificacion "
+ "navegacion"
+ "video"
+ "bloqueTexto"
+ "casillasSus"
+ "contacto"; }
+  /*Canmbia tañano de letra de cartel de alerta*/
   .alerta {
     font-size: 10px; }
+  /*Pone la lista de navegacion centralizado y en columna*/
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
     justify-content: center; }
+  /* coloca las casilla en forma de columna*/
   .casillasSus {
     flex-direction: column; }
-  .enlacesContacto {
-    flex-direction: column;
-    transition: 0s; }
-  .enlacesContacto div {
-    margin-top: 20px;
-    transition: 0s; }
-  .enlacesContacto div:hover {
-    margin: 1px; } }
-
-/*****PAGINA GALERIA*****/
-@media screen and (max-width: 600px) {
-  #gridAreaGaleria {
-    grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "imagenes" "casillasSus" "contacto"; }
-  .listaNavegacion {
-    flex-direction: column;
-    margin-left: 0%;
-    justify-content: center; }
-  .casillasSus {
-    flex-direction: column; }
+  /*coloca los enlace en forma de columna, cuando se selecciona un boton, se cambia de color*/
   .enlacesContacto {
     flex-direction: column; }
-  .enlacesContacto div {
-    margin-top: 20px; } }
+    .enlacesContacto div {
+      transition: 0s;
+      /**/ }
+      .enlacesContacto div:hover {
+        background-color: #000000; } }
 
 /****GRID GALERIA*****/
 #gridAreaGaleria {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "imagenes imagenes  imagenes imagenes" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion"
+ "navegacion navegacion  navegacion navegacion"
+ "imagenes imagenes  imagenes imagenes"
+ "casillasSus casillasSus casillasSus  casillasSus"
+ "contacto contacto contacto contacto";
   grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
@@ -225,10 +222,33 @@ body {
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+@media screen and (max-width: 600px) {
+  #gridAreaGaleria {
+    grid-template-columns: 1fr;
+    grid-template-areas: "notificacion"
+ "navegacion"
+ "imagenes"
+ "casillasSus"
+ "contacto"; }
+  .listaNavegacion {
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center; }
+  .casillasSus {
+    flex-direction: column; }
+  .enlacesContacto {
+    flex-direction: column; }
+  .enlacesContacto div {
+    margin-top: 20px; } }
+
 /****GRID GUIA*****/
 #gridAreaGuia {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "textoImagen textoImagen  textoImagen textoImagen" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion"
+ "navegacion navegacion  navegacion navegacion"
+ "textoImagen textoImagen  textoImagen textoImagen"
+ "casillasSus casillasSus casillasSus  casillasSus"
+ "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
@@ -283,7 +303,11 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaGuia {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "textoImagen" "casillasSus" "contacto"; }
+    grid-template-areas: "notificacion"
+ "navegacion"
+ "textoImagen"
+ "casillasSus"
+ "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -298,7 +322,11 @@ body {
 /****GRID PRODUCTOS*****/
 #gridAreaProductos {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "lista lista  lista lista" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion"
+ "navegacion navegacion  navegacion navegacion"
+ "lista lista  lista lista"
+ "casillasSus casillasSus casillasSus  casillasSus"      
+ "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
@@ -321,7 +349,11 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaProductos {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "lista" "casillasSus" "contacto"; }
+    grid-template-areas: "notificacion"
+ "navegacion"
+ "lista"
+ "casillasSus"
+ "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -336,7 +368,11 @@ body {
 /****GRID REPARTO*****/
 #gridAreaReparto {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion"
+ "navegacion navegacion  navegacion navegacion"
+ "TextoMapa TextoMapa  Mapa Mapa"
+ "casillasSus casillasSus casillasSus  casillasSus"
+ "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
@@ -366,7 +402,12 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaReparto {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "Mapa" "TextoMapa" "casillasSus" "contacto"; }
+    grid-template-areas: "notificacion"
+ "navegacion"
+ "Mapa"
+ "TextoMapa"
+ "casillasSus"
+ "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;

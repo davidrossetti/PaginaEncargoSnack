@@ -34,3 +34,33 @@
     /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
+
+
+@media screen and (max-width:600px) {
+    #gridAreaGaleria{
+       grid-template-columns: 1fr; 
+     grid-template-areas:
+        "notificacion"
+        "navegacion"
+        "imagenes"
+       "casillasSus"
+        "contacto";
+    }
+   
+    .listaNavegacion{
+    flex-direction: column;
+    margin-left: 0%;
+    justify-content: center;   
+ }
+ .casillasSus{
+     flex-direction: column;
+ }
+
+ .enlacesContacto{
+     flex-direction: column;
+ }
+
+ .enlacesContacto div{
+    margin-top: 20px;
+}
+}
