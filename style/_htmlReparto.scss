@@ -31,8 +31,14 @@
 .mapaReparto{
     grid-area: Mapa;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    
+    img{
+        height: 450 px;
+        width: 450px;
+        justify-content: center;   
+        align-content: center;
+    }
 
 }
 /***********************MEDIA QUERIES******************************************/
@@ -68,5 +74,11 @@
  }
  .enlacesContacto div{
     margin-top: 20px;
+}
+.mapaReparto img{
+    height: 350 px;
+    width: 350px;
+    justify-content: center;   
+    align-content: center;
 }
 }

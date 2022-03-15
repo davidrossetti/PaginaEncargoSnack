@@ -1,4 +1,8 @@
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
+
+
+
+
 .casillasSus {
     grid-area: casillasSus;
     background-color: rgb(144, 190, 109);
@@ -9,6 +13,7 @@
     /*distribuye los elementos dentro de la caja section en el eje x*/
     transition: all 1s;
     border-radius: 2rem;
+    
 
     /*Cambia color de la casilla suscripcion */
     &:hover {
@@ -58,8 +63,6 @@
     }
 }
 
-
-
 /*Se ordena los elementos de enlace*/
 .enlacesContacto {
     display: flex;
@@ -77,8 +80,27 @@
         /*++espacio a la izq., valida space around de .enlacesContacto*/
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
-
-
+        &:hover {
+            background-color: black;
+        }
     }
 
+}
+
+
+$redes:(
+boton1:#75747b,
+boton2:#c00000,
+boton3:#240c8f,
+);
+@each $red, $color in $redes {
+    .#{$red}{
+        background-color: $color;
+        margin: 10px;
+        border-radius: 10px;
+        border-color: #000000;
+        align-content: center;
+        text-transform: uppercase;
+        text-decoration: #ffffff;
+    }
 }

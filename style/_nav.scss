@@ -1,8 +1,15 @@
+
+@mixin colorDeFondo($colorDeFondo){
+    background-color:$colorDeFondo ;
+
+}
+
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 
+
 .alerta {
+    @include colorDeFondo(rgb(249, 65, 68));
     grid-area: notificacion;
-    background-color: rgb(249, 65, 68);
     display: flex;
     justify-content: center;
     align-items: center;

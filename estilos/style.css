@@ -10,8 +10,8 @@ body {
 
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 .alerta {
-  grid-area: notificacion;
   background-color: #f94144;
+  grid-area: notificacion;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,15 +107,40 @@ body {
     /*++espacio a la izq., valida space around de .enlacesContacto*/
     background-color: white;
     border-radius: 2rem; }
+    .enlacesContacto div:hover {
+      background-color: black; }
+
+.boton1 {
+  background-color: #75747b;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: #000000;
+  align-content: center;
+  text-transform: uppercase;
+  text-decoration: #ffffff; }
+
+.boton2 {
+  background-color: #c00000;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: #000000;
+  align-content: center;
+  text-transform: uppercase;
+  text-decoration: #ffffff; }
+
+.boton3 {
+  background-color: #240c8f;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: #000000;
+  align-content: center;
+  text-transform: uppercase;
+  text-decoration: #ffffff; }
 
 /****GRID INDEX*****/
 #gridAreaIndex {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion"
- "navegacion navegacion  navegacion navegacion"
- "bloqueTexto bloqueTexto  video video"
- "casillasSus casillasSus casillasSus  casillasSus"
- "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
@@ -157,6 +182,8 @@ body {
   grid-area: video;
   display: flex;
   justify-content: center;
+  width: 560;
+  height: 315;
   /*Centraliza video*/ }
 
 /***********************MEDIA QUERIES******************************************/
@@ -168,12 +195,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion "
- "navegacion"
- "video"
- "bloqueTexto"
- "casillasSus"
- "contacto"; }
+    grid-template-areas: "notificacion " "navegacion" "video" "bloqueTexto" "casillasSus" "contacto"; }
   /*Canmbia tañano de letra de cartel de alerta*/
   .alerta {
     font-size: 10px; }
@@ -182,6 +204,11 @@ body {
     flex-direction: column;
     margin-left: 0%;
     justify-content: center; }
+  .videoPrincipal {
+    flex-direction: column;
+    justify-content: center;
+    width: 160;
+    height: 15; }
   /* coloca las casilla en forma de columna*/
   .casillasSus {
     flex-direction: column; }
@@ -197,11 +224,7 @@ body {
 /****GRID GALERIA*****/
 #gridAreaGaleria {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion"
- "navegacion navegacion  navegacion navegacion"
- "imagenes imagenes  imagenes imagenes"
- "casillasSus casillasSus casillasSus  casillasSus"
- "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "imagenes imagenes  imagenes imagenes" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
@@ -225,11 +248,7 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaGaleria {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion"
- "navegacion"
- "imagenes"
- "casillasSus"
- "contacto"; }
+    grid-template-areas: "notificacion" "navegacion" "imagenes" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -244,11 +263,7 @@ body {
 /****GRID GUIA*****/
 #gridAreaGuia {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion"
- "navegacion navegacion  navegacion navegacion"
- "textoImagen textoImagen  textoImagen textoImagen"
- "casillasSus casillasSus casillasSus  casillasSus"
- "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "textoImagen textoImagen  textoImagen textoImagen" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
@@ -263,13 +278,13 @@ body {
   flex-direction: column; }
 
 /*cambia posicion entre caja de texto e imagen*/
-.textoImagenInvertido {
+.textoImagenInvertido, .cajaTexto2 {
   display: flex;
   margin-top: 1.5rem;
   flex-direction: row-reverse; }
 
 /*Modifica atributos generales de la seccion caja de texto e imagen de la pagina guia*/
-.textoImagen {
+.textoImagen, .cajaTexto1, .cajaTexto3 {
   display: flex;
   margin-top: 1.5rem; }
 
@@ -296,6 +311,15 @@ body {
   margin-top: 2rem;
   /*agrega margen superior*/ }
 
+.cajaTexto1 {
+  background-color: #383737; }
+
+.cajaTexto2 {
+  background-color: #767272; }
+
+.cajaTexto3 {
+  background-color: #d5d5d5; }
+
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
@@ -303,11 +327,7 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaGuia {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion"
- "navegacion"
- "textoImagen"
- "casillasSus"
- "contacto"; }
+    grid-template-areas: "notificacion" "navegacion" "textoImagen" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -322,11 +342,7 @@ body {
 /****GRID PRODUCTOS*****/
 #gridAreaProductos {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion"
- "navegacion navegacion  navegacion navegacion"
- "lista lista  lista lista"
- "casillasSus casillasSus casillasSus  casillasSus"      
- "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "lista lista  lista lista" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
@@ -349,11 +365,7 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaProductos {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion"
- "navegacion"
- "lista"
- "casillasSus"
- "contacto"; }
+    grid-template-areas: "notificacion" "navegacion" "lista" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -368,11 +380,7 @@ body {
 /****GRID REPARTO*****/
 #gridAreaReparto {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion"
- "navegacion navegacion  navegacion navegacion"
- "TextoMapa TextoMapa  Mapa Mapa"
- "casillasSus casillasSus casillasSus  casillasSus"
- "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
@@ -391,9 +399,12 @@ body {
 /*Se modifica atributos de la imagen del Mapa del HTML reparto*/
 .mapaReparto {
   grid-area: Mapa;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  display: flex; }
+  .mapaReparto img {
+    height: 450 px;
+    width: 450px;
+    justify-content: center;
+    align-content: center; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
@@ -402,12 +413,7 @@ body {
 @media screen and (max-width: 600px) {
   #gridAreaReparto {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion"
- "navegacion"
- "Mapa"
- "TextoMapa"
- "casillasSus"
- "contacto"; }
+    grid-template-areas: "notificacion" "navegacion" "Mapa" "TextoMapa" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -417,4 +423,9 @@ body {
   .enlacesContacto {
     flex-direction: column; }
   .enlacesContacto div {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .mapaReparto img {
+    height: 350 px;
+    width: 350px;
+    justify-content: center;
+    align-content: center; } }

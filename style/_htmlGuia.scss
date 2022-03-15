@@ -59,8 +59,24 @@
     /*agrega margen inferior*/
     margin-top: 2rem;
     /*agrega margen superior*/
-
 }
+
+.cajaTexto1{
+@extend .textoImagen;
+background-color: #383737;
+}
+
+.cajaTexto2{
+    @extend .textoImagenInvertido;
+background-color: #767272;
+}
+
+.cajaTexto3{
+    @extend .textoImagen;
+background-color: #d5d5d5;
+}
+
+
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
