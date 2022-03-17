@@ -20,13 +20,21 @@
 
 }
 
+/*Configura logo*/
+.logo{
+    grid-area: logo;
+    display: flex;
+    border-radius: 5rem;
+    width: 350px;
+    height: 90px;
+    ;
+}
+
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
     grid-area: navegacion;
-    background-image: url(../multimedia/snack-conjunto.jpeg);
     /*agrega una imagen de fondo*/
-    margin-left: 800px;
-    /*agrega margen para posicionar lista de nav. hacia la izquierda*/
+    background-image: url(../multimedia/snack-conjunto.jpeg);
     display: flex;
     justify-content: space-around;
     /*distribuye elementos de forma igualitaria*/

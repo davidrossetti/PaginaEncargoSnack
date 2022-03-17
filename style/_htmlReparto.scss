@@ -5,7 +5,7 @@
     display: grid;
     grid-template-areas:
         "notificacion notificacion notificacion notificacion"
-        "navegacion navegacion  navegacion navegacion"
+        "logo navegacion  navegacion navegacion"
         "TextoMapa TextoMapa  Mapa Mapa"
         "casillasSus casillasSus casillasSus  casillasSus"
         "contacto contacto contacto contacto";
@@ -77,7 +77,7 @@
 }
 .mapaReparto img{
     height: 350 px;
-    width: 350px;
+    width: 350 px;
     justify-content: center;   
     align-content: center;
 }

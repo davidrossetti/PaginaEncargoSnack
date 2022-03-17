@@ -19,13 +19,19 @@ body {
   color: aliceblue;
   border-radius: 2rem; }
 
+/*Configura logo*/
+.logo {
+  grid-area: logo;
+  display: flex;
+  border-radius: 5rem;
+  width: 350px;
+  height: 90px; }
+
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
   grid-area: navegacion;
-  background-image: url(../multimedia/snack-conjunto.jpeg);
   /*agrega una imagen de fondo*/
-  margin-left: 800px;
-  /*agrega margen para posicionar lista de nav. hacia la izquierda*/
+  background-image: url(../multimedia/snack-conjunto.jpeg);
   display: flex;
   justify-content: space-around;
   /*distribuye elementos de forma igualitaria*/
@@ -48,6 +54,10 @@ body {
       border-radius: 20px; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
+.logo {
+  width: 20 px;
+  height: 15 px; }
+
 .casillasSus {
   grid-area: casillasSus;
   background-color: #90be6d;
@@ -140,13 +150,17 @@ body {
 /****GRID INDEX*****/
 #gridAreaIndex {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
+
+.logo {
+  width: 20 px;
+  height: 15 px; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
@@ -224,7 +238,7 @@ body {
 /****GRID GALERIA*****/
 #gridAreaGaleria {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "imagenes imagenes  imagenes imagenes" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "imagenes imagenes  imagenes imagenes" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
@@ -263,7 +277,7 @@ body {
 /****GRID GUIA*****/
 #gridAreaGuia {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "textoImagen textoImagen  textoImagen textoImagen" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "textoImagen textoImagen  textoImagen textoImagen" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
@@ -342,7 +356,7 @@ body {
 /****GRID PRODUCTOS*****/
 #gridAreaProductos {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "lista lista  lista lista" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "lista lista  lista lista" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
@@ -380,7 +394,7 @@ body {
 /****GRID REPARTO*****/
 #gridAreaReparto {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "navegacion navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
   grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
@@ -426,6 +440,6 @@ body {
     margin-top: 20px; }
   .mapaReparto img {
     height: 350 px;
-    width: 350px;
+    width: 350 px;
     justify-content: center;
     align-content: center; } }
