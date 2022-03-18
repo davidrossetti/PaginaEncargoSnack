@@ -16,6 +16,7 @@
     font-size: 30px;
     color: aliceblue;
     border-radius: 2rem;
+    font-family: 'Fredoka', sans-serif;
 
 
 }
@@ -27,8 +28,9 @@
     border-radius: 5rem;
     width: 350px;
     height: 90px;
-    ;
-}
+    border: 1rem outset;
+
+   }
 
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
@@ -44,8 +46,10 @@
 
     /*Elimina el subrayado en los enlaces de la lista de navegacion*/
     a {
+        color: blueviolet;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 45px;
+        font-family: 'Fredoka', sans-serif;
 
 
     }

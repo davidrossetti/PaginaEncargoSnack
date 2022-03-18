@@ -1,10 +1,7 @@
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 
 
-.logo{
-    width: 20 px;
-    height: 15 px;
-}
+
 
 .casillasSus {
     grid-area: casillasSus;
@@ -52,8 +49,8 @@
 
     /*Cambia margen de la casilla contacto posicionar mouse sobre la casilla*/
     &:hover {
-        margin-left: 170px;
-        margin-right: 170px;
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
     /*Cambia color y posicion del titulo de la casiila contactos*/
@@ -92,18 +89,18 @@
 
 
 $redes:(
-boton1:#75747b,
-boton2:#c00000,
-boton3:#240c8f,
+boton1: blue,
+boton2:green,
+boton3:#8778ca,
 );
 @each $red, $color in $redes {
     .#{$red}{
         background-color: $color;
         margin: 10px;
-        border-radius: 10px;
-        border-color: #000000;
+        border-radius:180px;
+        border-color: #e10c0c;
         align-content: center;
         text-transform: uppercase;
-        text-decoration: #ffffff;
+        text-decoration: #bfbfbf;
     }
 }

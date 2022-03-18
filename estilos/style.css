@@ -17,7 +17,8 @@ body {
   align-items: center;
   font-size: 30px;
   color: aliceblue;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  font-family: 'Fredoka', sans-serif; }
 
 /*Configura logo*/
 .logo {
@@ -25,7 +26,8 @@ body {
   display: flex;
   border-radius: 5rem;
   width: 350px;
-  height: 90px; }
+  height: 90px;
+  border: 1rem outset; }
 
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
@@ -41,8 +43,10 @@ body {
   /*Elimina el subrayado en los enlaces de la lista de navegacion*/
   /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/ }
   .listaNavegacion a {
+    color: blueviolet;
     text-decoration: none;
-    font-size: 20px; }
+    font-size: 45px;
+    font-family: 'Fredoka', sans-serif; }
   .listaNavegacion div {
     background-color: #fff9f9;
     border: 0.1rem solid #000000;
@@ -54,10 +58,6 @@ body {
       border-radius: 20px; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
-.logo {
-  width: 20 px;
-  height: 15 px; }
-
 .casillasSus {
   grid-area: casillasSus;
   background-color: #90be6d;
@@ -96,8 +96,8 @@ body {
   /*Cambia margen de la casilla contacto posicionar mouse sobre la casilla*/
   /*Cambia color y posicion del titulo de la casiila contactos*/ }
   .contacto:hover {
-    margin-left: 170px;
-    margin-right: 170px; }
+    margin-left: 90px;
+    margin-right: 90px; }
   .contacto h3 {
     color: aliceblue;
     justify-content: center;
@@ -121,31 +121,31 @@ body {
       background-color: black; }
 
 .boton1 {
-  background-color: #75747b;
+  background-color: blue;
   margin: 10px;
-  border-radius: 10px;
-  border-color: #000000;
+  border-radius: 180px;
+  border-color: #e10c0c;
   align-content: center;
   text-transform: uppercase;
-  text-decoration: #ffffff; }
+  text-decoration: #bfbfbf; }
 
 .boton2 {
-  background-color: #c00000;
+  background-color: green;
   margin: 10px;
-  border-radius: 10px;
-  border-color: #000000;
+  border-radius: 180px;
+  border-color: #e10c0c;
   align-content: center;
   text-transform: uppercase;
-  text-decoration: #ffffff; }
+  text-decoration: #bfbfbf; }
 
 .boton3 {
-  background-color: #240c8f;
+  background-color: #8778ca;
   margin: 10px;
-  border-radius: 10px;
-  border-color: #000000;
+  border-radius: 180px;
+  border-color: #e10c0c;
   align-content: center;
   text-transform: uppercase;
-  text-decoration: #ffffff; }
+  text-decoration: #bfbfbf; }
 
 /****GRID INDEX*****/
 #gridAreaIndex {
@@ -157,10 +157,6 @@ body {
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
-
-.logo {
-  width: 20 px;
-  height: 15 px; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
@@ -185,11 +181,13 @@ body {
   /*agrega margen inferior*/
   margin-top: 2rem;
   /*agrega margen superior*/
-  border-radius: 2rem;
-  transition: all 2s; }
+  border-radius: 1.5rem;
+  transition: all 1s; }
   .descripcionVideo:hover {
     background-color: white;
-    /*Cambiar de color el recuadro de texto al posicionar el mouse*/ }
+    /*Cambiar de color el recuadro de texto al posicionar el mouse*/
+    font-size: 1.5rem;
+    visibility: hidden; }
 
 /*Index_video:Centraliza y agrega atributos a video de youtube*/
 .videoPrincipal {

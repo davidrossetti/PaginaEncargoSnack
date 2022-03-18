@@ -19,12 +19,6 @@
 }
 
 
-.logo{
-    width: 20 px;
-    height: 15 px;
-}
-
-
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
     grid-area: bloqueTexto;
@@ -48,13 +42,18 @@
     /*agrega margen inferior*/
     margin-top: 2rem;
     /*agrega margen superior*/
-    border-radius: 2rem;
-    transition: all 2s;
+    border-radius: 1.5rem;
+    transition: all 1s;
 
     &:hover {
         background-color: $colorTextoVideoMouse;
         /*Cambiar de color el recuadro de texto al posicionar el mouse*/
+        font-size: 1.5rem;
+        visibility:hidden;
+        
+        
     }
+   
 
 }
 
