@@ -10,11 +10,11 @@
         "borde borde borde borde"  
         "casillasSus casillasSus casillasSus  casillasSus"
         "contacto contacto contacto contacto";
-    grid-template-columns: 1fr 1fr 1.8fr 0.3fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     /*Configura tamaño columnas*/
-    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr 1fr;
+    grid-template-rows:0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1frr;
     /*Configura tamaño filas*/
-    gap: 10px 10px;
+    gap: 60px 10px;
     /*Configura tamaño margenes*/
 
 }
@@ -25,9 +25,17 @@
 }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
+
+.descripcionVideo, .videoPrincipal{
+display: flex;
+justify-content: space-around;}
+
+
+
 .descripcionVideo {
     grid-area: bloqueTexto;
     display: flex;
+    flex-direction: column;
     background-color: $colorTextoVideo;
     padding: 1.5rem;
     /*Configuracion padding(distancia entre letra y padding)*/
@@ -53,8 +61,7 @@
     &:hover {
         background-color: $colorTextoVideoMouse;
         /*Cambiar de color el recuadro de texto al posicionar el mouse*/
-        font-size: 1.5rem;
-        visibility:hidden;
+       
         
         
     }
@@ -64,14 +71,14 @@
 
 
 
-/*Index_video:Centraliza y agrega atributos a video de youtube*/
+/*Index_video:agrega atributos a video de youtube*/
 .videoPrincipal {
+    margin: auto;
     grid-area: video;
     display: flex;
-    justify-content: center;
-    width: 560;
-    height: 315;
-    /*Centraliza video*/
+    width: auto;
+    height: 16rem;
+    
 
 }
 

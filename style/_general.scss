@@ -3,7 +3,23 @@
     padding: 0;
     margin: 0;
 }
+/*Aplica tamaño para utilizar rem en todas las*/
+html{
+    font: size 20px;
+    }
+
 /*Configuracion general del color de las paginas html*/
 body {
-    background-color:  rgb(249, 199, 79);
+    background-color:#c93537de;
 }
+/*Configura margen de footer*/
+footer{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    
+        
+}
+
+
+    
+        

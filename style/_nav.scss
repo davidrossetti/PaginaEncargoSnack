@@ -32,6 +32,10 @@
     height: auto;
    border: 1rem outset;
    margin: auto;
+   transition: all 2s;
+   &:hover{
+       border-style: inset;
+   }   
     
  }
 
@@ -41,13 +45,14 @@
     grid-area: navegacion;
     /*agrega una imagen de fondo*/
     background-image: url(../multimedia/snack-conjunto.jpeg);
+    border: #ffffff solid;
     display: flex;
     justify-content: space-around;
     /*distribuye elementos de forma igualitaria*/
     align-items: center;
     /*posiciona el texto de manera central en el eje Y*/
     border-radius: 1rem;
-
+    
 
     /*Elimina el subrayado en los enlaces de la lista de navegacion*/
     a {

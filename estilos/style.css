@@ -19,13 +19,17 @@
   width: 350px;
   height: auto;
   border: 1rem outset;
-  margin: auto; }
+  margin: auto;
+  transition: all 2s; }
+  .logo:hover {
+    border-style: inset; }
 
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
   grid-area: navegacion;
   /*agrega una imagen de fondo*/
   background-image: url(../multimedia/snack-conjunto.jpeg);
+  border: #ffffff solid;
   display: flex;
   justify-content: space-around;
   /*distribuye elementos de forma igualitaria*/
@@ -60,9 +64,18 @@
   padding: 0;
   margin: 0; }
 
+/*Aplica tamaño para utilizar rem en todas las*/
+html {
+  font: size 20px; }
+
 /*Configuracion general del color de las paginas html*/
 body {
-  background-color: #f9c74f; }
+  background-color: #c93537de; }
+
+/*Configura margen de footer*/
+footer {
+  margin-top: 2rem;
+  margin-bottom: 0; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 .casillasSus {
@@ -100,72 +113,60 @@ body {
   /* Ordena en el centro del eje X texto-Contactos y enlaces*/
   border-radius: 2rem;
   transition: all 2s;
-  /*Cambia margen de la casilla contacto posicionar mouse sobre la casilla*/
-  /*Cambia color y posicion del titulo de la casiila contactos*/ }
+  /*Cambia margen de la casilla contacto y modifica titulo "contacto" al posicionar mouse sobre la casilla*/
+  /*Cambia color y posicion del titulo de la casiila contactos*/
+  /*Se ordena los elementos de enlace*/ }
   .contacto:hover {
     margin-left: 90px;
     margin-right: 90px; }
+    .contacto:hover h3 {
+      font-size: 40px; }
   .contacto h3 {
     color: aliceblue;
     justify-content: center;
-    align-items: center; }
-
-/*Se ordena los elementos de enlace*/
-.enlacesContacto {
-  display: flex;
-  justify-content: space-around;
-  /*distribuye los elementos dentro de la caja section en el eje x*/
-  /*Se utiliza para agrandar espacio entre los enlaces*/ }
-  .enlacesContacto div {
+    align-items: center;
+    font-size: 35px;
+    transition: all 2s;
+    font-style: italic; }
+  .contacto .enlacesContacto {
     display: flex;
-    margin-inline-end: 2rem;
-    padding-left: 6rem;
-    /*++espacio a la der.,valida space around de .enlacesContacto*/
-    padding-right: 6rem;
-    /*++espacio a la izq., valida space around de .enlacesContacto*/
-    background-color: white;
-    border-radius: 2rem;
-    transition: all 2s; }
-    .enlacesContacto div:hover {
-      background-color: black;
-      padding-left: 0.1rem; }
-
-.boton1 {
-  background-color: blue;
-  margin: 10px;
-  border-radius: 180px;
-  border-color: #e10c0c;
-  align-content: center;
-  text-transform: uppercase;
-  text-decoration: #bfbfbf; }
-
-.boton2 {
-  background-color: green;
-  margin: 10px;
-  border-radius: 180px;
-  border-color: #e10c0c;
-  align-content: center;
-  text-transform: uppercase;
-  text-decoration: #bfbfbf; }
-
-.boton3 {
-  background-color: #8778ca;
-  margin: 10px;
-  border-radius: 180px;
-  border-color: #e10c0c;
-  align-content: center;
-  text-transform: uppercase;
-  text-decoration: #bfbfbf; }
+    justify-content: space-around;
+    /*distribuye los elementos dentro de la caja section en el eje x*/
+    /*Se utiliza para agrandar espacio entre los enlaces*/ }
+    .contacto .enlacesContacto div {
+      display: flex;
+      margin-inline-end: 2rem;
+      padding-left: 6rem;
+      /*++espacio a la der.,valida space around de .enlacesContacto*/
+      padding-right: 6rem;
+      /*++espacio a la izq., valida space around de .enlacesContacto*/
+      background-color: white;
+      border-radius: 2rem;
+      margin: 2rem;
+      transition: all 2s; }
+      .contacto .enlacesContacto div:hover {
+        background-color: black;
+        padding-left: 0.1rem;
+        /*Logra efecto de sombreado en iconos*/ }
+        .contacto .enlacesContacto div:hover .boton1 {
+          background-color: blue;
+          border-radius: 15px; }
+        .contacto .enlacesContacto div:hover .boton2 {
+          background-color: green;
+          border-radius: 15px; }
+        .contacto .enlacesContacto div:hover .boton3 {
+          background-color: orange;
+          border-radius: 15px; }
 
 /****GRID INDEX*****/
 #gridAreaIndex {
   display: grid;
   grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "borde borde borde borde"   "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
-  grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1frr;
   /*Configura tamaño filas*/
-  gap: 10px 10px;
+  gap: 60px 10px;
   /*Configura tamaño margenes*/ }
 
 .borde {
@@ -173,9 +174,14 @@ body {
   border-bottom: 1rem dotted black; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
+.descripcionVideo, .videoPrincipal {
+  display: flex;
+  justify-content: space-around; }
+
 .descripcionVideo {
   grid-area: bloqueTexto;
   display: flex;
+  flex-direction: column;
   background-color: #f8961e;
   padding: 1.5rem;
   /*Configuracion padding(distancia entre letra y padding)*/
@@ -199,18 +205,15 @@ body {
   transition: all 1s; }
   .descripcionVideo:hover {
     background-color: white;
-    /*Cambiar de color el recuadro de texto al posicionar el mouse*/
-    font-size: 1.5rem;
-    visibility: hidden; }
+    /*Cambiar de color el recuadro de texto al posicionar el mouse*/ }
 
-/*Index_video:Centraliza y agrega atributos a video de youtube*/
+/*Index_video:agrega atributos a video de youtube*/
 .videoPrincipal {
+  margin: auto;
   grid-area: video;
   display: flex;
-  justify-content: center;
-  width: 560;
-  height: 315;
-  /*Centraliza video*/ }
+  width: auto;
+  height: 16rem; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
