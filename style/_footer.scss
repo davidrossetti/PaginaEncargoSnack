@@ -13,7 +13,7 @@
     /*distribuye los elementos dentro de la caja section en el eje x*/
     transition: all 1s;
     border-radius: 2rem;
-    
+
 
     /*Cambia color de la casilla suscripcion */
     &:hover {
@@ -74,30 +74,35 @@
     /*Se utiliza para agrandar espacio entre los enlaces*/
     div {
         display: flex;
+        margin-inline-end: 2rem;
         padding-left: 6rem;
         /*++espacio a la der.,valida space around de .enlacesContacto*/
         padding-right: 6rem;
         /*++espacio a la izq., valida space around de .enlacesContacto*/
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
+        transition: all 2s;
+
         &:hover {
             background-color: black;
+            padding-left: 0.1rem;
         }
     }
 
 }
 
 
-$redes:(
-boton1: blue,
-boton2:green,
-boton3:#8778ca,
+$redes:(boton1: blue,
+    boton2:green,
+    boton3:#8778ca,
 );
-@each $red, $color in $redes {
-    .#{$red}{
+
+@each $red,
+$color in $redes {
+    .#{$red} {
         background-color: $color;
         margin: 10px;
-        border-radius:180px;
+        border-radius: 180px;
         border-color: #e10c0c;
         align-content: center;
         text-transform: uppercase;

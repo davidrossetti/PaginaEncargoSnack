@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/*Reset CSS*/
-* {
-  padding: 0;
-  margin: 0; }
-
-/*Configuracion general del color de las paginas html*/
-body {
-  background-color: #f9c74f; }
-
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 .alerta {
   background-color: #f94144;
@@ -16,9 +7,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: aliceblue;
-  border-radius: 2rem;
-  font-family: 'Fredoka', sans-serif; }
+  color: white;
+  font-family: 'Fredoka', sans-serif;
+  border-bottom: 0.5rem #f78b8b dashed; }
 
 /*Configura logo*/
 .logo {
@@ -26,8 +17,9 @@ body {
   display: flex;
   border-radius: 5rem;
   width: 350px;
-  height: 90px;
-  border: 1rem outset; }
+  height: auto;
+  border: 1rem outset;
+  margin: auto; }
 
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
@@ -43,19 +35,34 @@ body {
   /*Elimina el subrayado en los enlaces de la lista de navegacion*/
   /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/ }
   .listaNavegacion a {
-    color: blueviolet;
+    color: black;
     text-decoration: none;
-    font-size: 45px;
-    font-family: 'Fredoka', sans-serif; }
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    margin: 1rem;
+    transition: all 0.5s; }
+    .listaNavegacion a:hover {
+      background-color: #df9393;
+      border-radius: 20px;
+      color: white; }
   .listaNavegacion div {
     background-color: #fff9f9;
     border: 0.1rem solid #000000;
     /*configuracion del borde*/
-    transition: all 2s;
+    transition: all 0.5s;
     /*cambia el formato del boton al seleccionarlo*/ }
     .listaNavegacion div:hover {
       background-color: #9999ce;
       border-radius: 20px; }
+
+/*Reset CSS*/
+* {
+  padding: 0;
+  margin: 0; }
+
+/*Configuracion general del color de las paginas html*/
+body {
+  background-color: #f9c74f; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 .casillasSus {
@@ -111,14 +118,17 @@ body {
   /*Se utiliza para agrandar espacio entre los enlaces*/ }
   .enlacesContacto div {
     display: flex;
+    margin-inline-end: 2rem;
     padding-left: 6rem;
     /*++espacio a la der.,valida space around de .enlacesContacto*/
     padding-right: 6rem;
     /*++espacio a la izq., valida space around de .enlacesContacto*/
     background-color: white;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    transition: all 2s; }
     .enlacesContacto div:hover {
-      background-color: black; }
+      background-color: black;
+      padding-left: 0.1rem; }
 
 .boton1 {
   background-color: blue;
@@ -150,13 +160,17 @@ body {
 /****GRID INDEX*****/
 #gridAreaIndex {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "borde borde borde borde"   "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr 1fr;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
+
+.borde {
+  grid-area: borde;
+  border-bottom: 1rem dotted black; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
@@ -204,13 +218,26 @@ body {
 /*****PAGINA INDEX*****/
 @media screen and (max-width: 600px) {
   #gridAreaIndex {
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "notificacion " "navegacion" "video" "bloqueTexto" "casillasSus" "contacto"; }
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-columns: 2fr;
+    grid-template-areas: "logo"     "notificacion" "navegacion" "video" "bloqueTexto" "casillasSus" "contacto"; }
   /*Canmbia tañano de letra de cartel de alerta*/
-  .alerta {
-    font-size: 10px; }
+  .logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5rem;
+    width: 300px;
+    height: auto;
+    border: 1rem outset;
+    align-items: center;
+    justify-content: center;
+    margin: auto; }
   /*Pone la lista de navegacion centralizado y en columna*/
   .listaNavegacion {
     flex-direction: column;
@@ -278,7 +305,7 @@ body {
   grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "textoImagen textoImagen  textoImagen textoImagen" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
+  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
@@ -395,7 +422,7 @@ body {
   grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
   grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.1fr 0.1fr 0.2fr 0.27fr 0.5fr;
+  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
@@ -441,3 +468,8 @@ body {
     width: 350 px;
     justify-content: center;
     align-content: center; } }
+
+/*Bordes a utilizar:
+   Solid 
+   
+   */

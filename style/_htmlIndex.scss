@@ -7,17 +7,22 @@
         "notificacion notificacion notificacion notificacion"
         "logo navegacion  navegacion navegacion"
         "bloqueTexto bloqueTexto  video video"
+        "borde borde borde borde"  
         "casillasSus casillasSus casillasSus  casillasSus"
         "contacto contacto contacto contacto";
-    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1.8fr 0.3fr ;
     /*Configura tamaño columnas*/
-    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr 1fr;
     /*Configura tamaño filas*/
     gap: 10px 10px;
     /*Configura tamaño margenes*/
 
 }
 
+.borde{
+    grid-area: borde;
+    border-bottom: 1rem dotted black;
+}
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo {
@@ -77,11 +82,17 @@
 /*****PAGINA INDEX*****/
 @media screen and (max-width:600px) {
     #gridAreaIndex {
-        grid-template-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+        grid-template-columns: 2fr;
+
         grid-template-areas:
-            "notificacion "
+        "logo"    
+        "notificacion"
             "navegacion"
             "video"
             "bloqueTexto"
@@ -90,11 +101,18 @@
     }
 
     /*Canmbia tañano de letra de cartel de alerta*/
-    .alerta {
-        font-size: 10px;
-
+    .logo{
+           grid-area: logo;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5rem;
+            width: 300px;
+            height: auto;
+           border: 1rem outset;
+            align-items: center;
+            justify-content: center;
+            margin: auto;         
     }
-
     /*Pone la lista de navegacion centralizado y en columna*/
     .listaNavegacion {
         flex-direction: column;

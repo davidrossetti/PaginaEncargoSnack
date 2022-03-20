@@ -11,7 +11,7 @@
         "contacto contacto contacto contacto";
     grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
     /*Configura tamaño columnas*/
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.3fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
     /*Configura tamaño filas*/
     gap: 10px 10px;
     /*Configura tamaño margenes*/
@@ -36,6 +36,8 @@
     margin-top: 1.5rem;
     
 }
+
+
 
 /*Modifica los valores de las cajas de texto en la pagina guia*/
 .cajaTexto{

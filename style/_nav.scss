@@ -4,6 +4,8 @@
 
 }
 
+
+
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 
 
@@ -14,9 +16,9 @@
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color: aliceblue;
-    border-radius: 2rem;
+    color: rgb(255, 255, 255);
     font-family: 'Fredoka', sans-serif;
+    border-bottom: 0.5rem  rgb(247, 139, 139) dashed ;
 
 
 }
@@ -27,13 +29,15 @@
     display: flex;
     border-radius: 5rem;
     width: 350px;
-    height: 90px;
-    border: 1rem outset;
-
-   }
+    height: auto;
+   border: 1rem outset;
+   margin: auto;
+    
+ }
 
 /*Configura lista de navegacion aplica a todos los HTML*/
 .listaNavegacion {
+    
     grid-area: navegacion;
     /*agrega una imagen de fondo*/
     background-image: url(../multimedia/snack-conjunto.jpeg);
@@ -44,13 +48,20 @@
     /*posiciona el texto de manera central en el eje Y*/
     border-radius: 1rem;
 
+
     /*Elimina el subrayado en los enlaces de la lista de navegacion*/
     a {
-        color: blueviolet;
+        color: rgb(0, 0, 0);
         text-decoration: none;
-        font-size: 45px;
+        font-size: 20px;
         font-family: 'Fredoka', sans-serif;
-
+        margin: 1rem;
+        transition: all 0.5s;
+        &:hover {
+            background-color: rgb(223, 147, 147);
+            border-radius: 20px;
+            color: white;
+        }
 
     }
 
@@ -60,7 +71,7 @@
         border: 0.1rem solid #000000;
         /*configuracion del borde*/
 
-        transition: all 2s;
+        transition: all 0.5s;
         /*cambia el formato del boton al seleccionarlo*/
         &:hover {
             background-color: rgb(153, 153, 206);
