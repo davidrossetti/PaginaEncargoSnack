@@ -53,6 +53,7 @@
         margin-right: 90px;
         h3{
             font-size: 40px;
+            border: 0.5rem solid rgb(255, 255, 255);
         }
     }
 
@@ -62,9 +63,9 @@
         justify-content: center;
         align-items: center;
         font-size: 35px;
-        transition: all 2s;
-        font-style: italic;
-
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: all 1s;
+        
     }
     /*Se ordena los elementos de enlace*/
 .enlacesContacto {
@@ -90,9 +91,9 @@
       
 
         &:hover {
-            background-color: black;
+            background-color: rgb(84, 84, 84);
             padding-left: 0.1rem;
-            $redes: (boton1: blue,
+            $redes: (boton1: blue, 
                     boton2:green,
                     boton3:orange,
                 );

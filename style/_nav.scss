@@ -13,7 +13,7 @@
     @include colorDeFondo(rgb(249, 65, 68));
     grid-area: notificacion;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 30px;
     color: rgb(255, 255, 255);
@@ -21,6 +21,21 @@
     border-bottom: 0.5rem  rgb(247, 139, 139) dashed ;
 
 
+    div{
+
+        animation-name: movimientoAlerta;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 20s;
+        animation-delay:0.1s;
+    
+        @keyframes movimientoAlerta{
+            0% {transform: translateX(-60rem);}
+            100% {transform: translateX(150rem)}
+        }
+    }
+    
+    
 }
 
 /*Configura logo*/
@@ -57,7 +72,7 @@
     /*Elimina el subrayado en los enlaces de la lista de navegacion*/
     a {
         color: rgb(0, 0, 0);
-        text-decoration: none;
+         text-decoration: none;
         font-size: 20px;
         font-family: 'Fredoka', sans-serif;
         margin: 1rem;
@@ -72,6 +87,8 @@
 
     /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/
     div {
+
+        
         background-color: rgb(255, 249, 249);
         border: 0.1rem solid #000000;
         /*configuracion del borde*/
@@ -82,6 +99,7 @@
             background-color: rgb(153, 153, 206);
             border-radius: 20px;
         }
+     
     }
 
 }

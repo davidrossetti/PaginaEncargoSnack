@@ -4,12 +4,24 @@
   background-color: #f94144;
   grid-area: notificacion;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: 30px;
   color: white;
   font-family: 'Fredoka', sans-serif;
   border-bottom: 0.5rem #f78b8b dashed; }
+  .alerta div {
+    animation-name: movimientoAlerta;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 20s;
+    animation-delay: 0.1s; }
+
+@keyframes movimientoAlerta {
+  0% {
+    transform: translateX(-60rem); }
+  100% {
+    transform: translateX(150rem); } }
 
 /*Configura logo*/
 .logo {
@@ -120,14 +132,15 @@ footer {
     margin-left: 90px;
     margin-right: 90px; }
     .contacto:hover h3 {
-      font-size: 40px; }
+      font-size: 40px;
+      border: 0.5rem solid white; }
   .contacto h3 {
     color: aliceblue;
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    transition: all 2s;
-    font-style: italic; }
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 1s; }
   .contacto .enlacesContacto {
     display: flex;
     justify-content: space-around;
@@ -145,7 +158,7 @@ footer {
       margin: 2rem;
       transition: all 2s; }
       .contacto .enlacesContacto div:hover {
-        background-color: black;
+        background-color: #545454;
         padding-left: 0.1rem;
         /*Logra efecto de sombreado en iconos*/ }
         .contacto .enlacesContacto div:hover .boton1 {
