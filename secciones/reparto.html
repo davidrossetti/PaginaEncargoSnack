@@ -4,27 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Description y keywords-->
     <meta name="description" content="Pagina de reparto.Horario y zonas">
-    <meta name="keywords" content="Buenos Aires,San Martin,Santos Lugares,Ciudadela,Liniers,Flores,Villa Cresto,Ramos Mejia,Caseros"> 
+    <meta name="keywords"
+        content="Buenos Aires,San Martin,Santos Lugares,Ciudadela,Liniers,Flores,Villa Cresto,Ramos Mejia,Caseros">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FavIcon-->
     <link rel="shortcut icon" href="../multimedia/icono-camion.png" type="image/x-icon">
-     <!--Letra tipografica google-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
-   <!--Letra tipografica google-->
+     <!--Vinculo BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Letra tipografica google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
+    <!--Vinculo con archivo CSS-->
     <link rel="stylesheet" href="../estilos/style.css">
+    <!--Titulo de pestaña-->
     <title>Distribuidora V.O.R.</title>
 </head>
+
 <!--Se asigna un grid a esta pagina HTML-->
+
 <body id="gridAreaReparto">
-<!--mensaje de notificacion superior-->
-<header class="alerta">
-    <div class="alert alert-danger" role="alert">
-        Alerta de ofertas.Dale un <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8EEeKnCbHd2Uk0k5uLScR05UbTyJ_SlBejPyH_Aoqzaq_wy10aAsOm23xyq2G7E-d-m-pDpA7BfFc/pub?output=xlsx"" class="alert-link">click</a> si lo quieres.
-      </div>
-</header>
-    
+
+    <!--BOOTSTRAP:mensaje de alarma de notificacion superior-->
+    <header class="alerta">
+        <div class="alert alert-danger" role="alert">
+            Marzo: 10% de descuento en Hamburguesas.Hacer <a
+                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8EEeKnCbHd2Uk0k5uLScR05UbTyJ_SlBejPyH_Aoqzaq_wy10aAsOm23xyq2G7E-d-m-pDpA7BfFc/pub?output=xlsx"" class="
+                alert-link">click</a> para ver oferta.
+        </div>
+    </header>
     <!--Lista de navegacion-->
     <div><img src="../multimedia/logo.JPG" class="logo"></div>
     <nav class="listaNavegacion">
@@ -41,76 +51,75 @@
         <div>
 
             <a href="galeria.html">Galeria</a>
-        
+
         </div>
         <div>
             <a href="reparto.html">Zona de reparto</a>
         </div>
 
     </nav>
-      
-<!--MapaReparto-->
-        <section class="mapaReparto">
-            <h1>Area disponibles</h1>
 
-            <img src="../multimedia/mapa.jpg" alt="mapa de reparto">
+    <!--MapaReparto-->
+    <section class="mapaReparto">
+        <h1>Area disponibles</h1>
 
-            <!-- Se aplica enlace interno-->
-            <p>En caso de no figurar tu zona.Consultar en cualquiera de los<a href="#pie">contactos</a></p>
-        </section>
-<!--descripcionMapa-->
-            
-            
-        <section class="descripcionMapaDeReparto">
-            <h1 class="contactos">Horarios de reparto</h1>
-            <!--BOOTSTRAP:TABLA CON HORARIOS-->
+        <img src="../multimedia/mapa.jpg" alt="mapa de reparto">
 
-            <table class="table">
-                <thead>
-                  <tr>
+        <!-- Se aplica enlace interno-->
+        <p>En caso de no figurar tu zona.Consultar en cualquiera de los<a href="#pie">contactos</a></p>
+    </section>
+    <!--descripcionMapa-->
+
+
+    <section class="descripcionMapaDeReparto">
+        <h1 class="contactos">Horarios de reparto</h1>
+        <!--BOOTSTRAP:TABLA CON HORARIOS-->
+        <table class="table">
+            <thead>
+                <tr>
                     <th scope="col">Dia</th>
                     <th scope="col">Inicio</th>
                     <th scope="col">Final</th>
                     <th scope="col">Zona</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
                     <th scope="row">Lunes</th>
                     <td>10 hs</td>
                     <td>17 hs</td>
                     <td>Caballito-Almagro</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">Martes</th>
                     <td>11 hs</td>
                     <td>18 hs</td>
                     <td>Palermo-Colegiales</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">Miercoles</th>
                     <td>10 hs</td>
                     <td>14 hs</td>
                     <td>V. Urquiza-Belgrano</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">Jueves</th>
-                     <td>10 hs</td>
+                    <td>10 hs</td>
                     <td>14 hs</td>
                     <td>V. Retiro-Recoleta</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <th scope="row">Viernes</th>
                     <td>09 hs</td>
                     <td>18 hs</td>
-                        <td>Consultar zonas</td>
-                  </tr>
-                </tbody>
-              </table>
+                    <td>Consultar zonas</td>
+                </tr>
+            </tbody>
+        </table>
 
-        </section>
-    
-        <!--Formularios de inscripcion-->
+    </section>
+
+    <!--Formularios de inscripcion-->
     <section class="casillasSus">
         <form>
             <p>Suscripcion por notificacion por whatsapp para ofertas</p>
@@ -127,24 +136,29 @@
         </form>
     </section>
 
-<!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
+    <!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
     <footer class="contacto">
-        <h3 id="pie">
+        <h3>
             Contactos
         </h3>
         <section class="enlacesContacto">
             <div>
-                <a href="https://www.facebook.com/negocioGenerico">facebook</a>
+                <a href="https://www.facebook.com/negocioGenerico" class="boton1"><img
+                        src="../multimedia/logoFacebook.png" alt="mail" </a> </div> <div>
+                    <a href="https://api.whatsapp.com/send?phone=5491111111111" class="boton2"><img
+                            src="../multimedia/logoWhatsapp.png" alt="whatsapp"></a>
             </div>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=5491111111111">whatsapp</a>
-            </div>
-            <div>
-                <a href="mailto:negocioGenerico@gmail.com">mail</a>
+                <a href="mailto:negocioGenerico@gmail.com" class="boton3"><img src="../multimedia/logoMail.png"
+                        alt="mail"></a>
             </div>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Scrip bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

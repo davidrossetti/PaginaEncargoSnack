@@ -122,9 +122,10 @@ justify-content: space-around;}
     }
     /*Pone la lista de navegacion centralizado y en columna*/
     .listaNavegacion {
+        padding: 5.5rem;
         flex-direction: column;
-        margin-left: 0%;
         justify-content: center;
+        
     }
     .videoPrincipal {
         flex-direction: column;
