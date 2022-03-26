@@ -106,11 +106,14 @@ justify-content: space-around;}
             "casillasSus"
             "contacto";
     }
-
+/*Desahabilita el cartel de alerta,(rompe y crea un scroll horizontal)*/
+    .alerta{
+        display: none;
+    }
     /*Canmbia tañano de letra de cartel de alerta*/
     .logo{
            grid-area: logo;
-            display: flex;
+            display: none;
             flex-direction: column;
             border-radius: 5rem;
             width: 300px;

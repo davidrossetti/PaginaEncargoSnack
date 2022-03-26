@@ -46,12 +46,13 @@
     /* Ordena en el centro del eje X texto-Contactos y enlaces*/
     border-radius: 2rem;
     transition: all 2s;
-    
+
     /*Cambia margen de la casilla contacto y modifica titulo "contacto" al posicionar mouse sobre la casilla*/
     &:hover {
         margin-left: 90px;
         margin-right: 90px;
-        h3{
+
+        h3 {
             font-size: 40px;
             border: 0.5rem solid rgb(255, 255, 255);
         }
@@ -65,50 +66,52 @@
         font-size: 35px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         transition: all 1s;
-        
+
     }
+
     /*Se ordena los elementos de enlace*/
-.enlacesContacto {
-    display: flex;
-    justify-content: space-around;
-    /*distribuye los elementos dentro de la caja section en el eje x*/
-
-   
-
-    /*Se utiliza para agrandar espacio entre los enlaces*/
-    div {
+    .enlacesContacto {
         display: flex;
-        margin-inline-end: 2rem;
-        padding-left: 6rem;
-        /*++espacio a la der.,valida space around de .enlacesContacto*/
-        padding-right: 6rem;
-        /*++espacio a la izq., valida space around de .enlacesContacto*/
-        background-color: rgb(255, 255, 255);
-        border-radius: 2rem;
-        margin: 2rem;
-        transition: all 2s;
+        justify-content: space-around;
+        /*distribuye los elementos dentro de la caja section en el eje x*/
 
-      
 
-        &:hover {
-            background-color: rgb(84, 84, 84);
-            padding-left: 0.1rem;
-            $redes: (boton1: blue, 
-                    boton2:green,
-                    boton3:orange,
-                );
 
-            /*Logra efecto de sombreado en iconos*/
-            @each $red,
-            $color in $redes {
-                .#{$red} {
-                    background-color: $color;
-                    border-radius: 15px;
+        /*Se utiliza para agrandar espacio entre los enlaces*/
+        div {
+            display: flex;
+            margin-inline-end: 2rem;
+            padding-left: 6rem;
+            /*++espacio a la der.,valida space around de .enlacesContacto*/
+            padding-right: 6rem;
+            /*++espacio a la izq., valida space around de .enlacesContacto*/
+            background-color: rgb(255, 255, 255);
+            border-radius: 2rem;
+            margin: 2rem;
+            transition: all 2s;
+
+
+
+            &:hover {
+                background-color: rgb(84, 84, 84);
+                padding-left: 0.1rem;
+                $redes: (boton1: blue,
+                        boton2:green,
+                        boton3:orange,
+                    );
+
+                /*Logra efecto de sombreado en iconos*/
+                @each $red,
+                $color in $redes {
+                    .#{$red} {
+                        background-color: $color;
+                        border-radius: 15px;
+                    }
                 }
             }
         }
+
     }
-
 }
-}
-
+/***********************MEDIA QUERIES******************************************/
+/*************************Celulares******************************************/

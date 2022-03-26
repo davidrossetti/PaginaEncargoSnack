@@ -20,7 +20,7 @@
     font-family: 'Fredoka', sans-serif;
     border-bottom: 0.5rem  rgb(247, 139, 139) dashed ;
 
-
+   
     div{
 
         animation-name: movimientoAlerta;
@@ -28,14 +28,27 @@
         animation-timing-function: ease-in;
         animation-duration: 20s;
         animation-delay:0.1s;
+        /*Pausa animacion al posicionar mouse*/
+        &:hover{
+            animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+        }
+        
+       
     
         @keyframes movimientoAlerta{
             0% {transform: translateX(-60rem);}
             100% {transform: translateX(150rem)}
+ 
+
         }
+        
     }
-    
-    
+
+}
+
+.logoYnavegacion{
+    display: flex;
 }
 
 /*Configura logo*/
