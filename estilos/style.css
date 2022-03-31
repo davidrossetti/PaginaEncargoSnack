@@ -409,13 +409,23 @@ footer {
 /****GRID PRODUCTOS*****/
 #gridAreaProductos {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "lista lista  lista lista" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
-  grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "tituloProductos tituloProductos tituloProductos tituloProductos" "casillasSus casillasSus casillasSus  casillasSus"       "contacto contacto contacto contacto";
+  grid-template-columns: 2fr 2fr 2fr 1fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 6fr 0.01fr;
   /*Configura tamaño filas*/
-  gap: 10px 10px;
+  gap: 20px 20px;
   /*Configura tamaño margenes*/ }
+
+.principal {
+  grid-area: tituloProductos; }
+
+.carousel-item {
+  max-height: 30rem; }
+
+.listaNavegacion {
+  grid-area: navegacion;
+  display: flex; }
 
 /*Se modifica atributos del apartado productos, posicion*/
 .listaProductos {
@@ -466,7 +476,8 @@ footer {
 /*Se modifica atributos de la imagen del Mapa del HTML reparto*/
 .mapaReparto {
   grid-area: Mapa;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .mapaReparto img {
     height: 450 px;
     width: 450px;
