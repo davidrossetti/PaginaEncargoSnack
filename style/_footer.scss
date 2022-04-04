@@ -1,11 +1,11 @@
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
 
-
+@import "variables";
 
 
 .casillasSus {
     grid-area: casillasSus;
-    background-color: rgb(144, 190, 109);
+    background-color: $colorFondoCasillaSus;
     display: flex;
     align-items: center;
     /* Ordena en el centro del eje X*/
@@ -17,17 +17,19 @@
 
     /*Cambia color de la casilla suscripcion */
     &:hover {
-        background-color: rgb(73, 112, 112);
+        background-color:$colorFondoCasillaSusMouse;
         font-size: 20px;
-        color: #ffffff;
+        color:$colorLetraFormuladrioMouse;
     }
 
     /*Agregan margen entre titulo y casilla de form*/
     form p {
-        background-color: rgb(73, 112, 112);
-        margin-bottom: 1rem;
+        background-color: $colorFondoTituloSus;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         border-radius: 1rem;
-        color: aliceblue;
+        color: $colorFondoLetra;
+        max-width: 50rem;
     }
 
 }
@@ -36,7 +38,7 @@
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
     grid-area: contacto;
-    background-color: rgb(87, 117, 144);
+    background-color:$colorfondoContactos;
     display: flex;
     flex-direction: column;
     /*Ordena en columna texto-Contactos y enlaces*/
@@ -54,13 +56,13 @@
 
         h3 {
             font-size: 40px;
-            border: 0.5rem solid rgb(255, 255, 255);
+            border: 0.5rem solid $colorBordeContactosMouse;
         }
     }
 
     /*Cambia color y posicion del titulo de la casiila contactos*/
     h3 {
-        color: aliceblue;
+        color: $colorTituloContactos;
         justify-content: center;
         align-items: center;
         font-size: 35px;
@@ -85,7 +87,7 @@
             /*++espacio a la der.,valida space around de .enlacesContacto*/
             padding-right: 6rem;
             /*++espacio a la izq., valida space around de .enlacesContacto*/
-            background-color: rgb(255, 255, 255);
+            background-color:$colorBotonContactos;
             border-radius: 2rem;
             margin: 2rem;
             transition: all 2s;
@@ -93,11 +95,11 @@
 
 
             &:hover {
-                background-color: rgb(84, 84, 84);
+                background-color: $colorBotonMouse;
                 padding-left: 0.1rem;
-                $redes: (boton1: blue,
-                        boton2:green,
-                        boton3:orange,
+                $redes: (boton1: $colorBotonFacebookMouse,
+                        boton2:$colorBotonWhassapMouse,
+                        boton3:$colorBotonMailMouse,
                     );
 
                 /*Logra efecto de sombreado en iconos*/

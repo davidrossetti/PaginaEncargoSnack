@@ -1,4 +1,6 @@
 /*Reset CSS*/
+@import "variables";
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +12,7 @@ html{
 
 /*Configuracion general del color de las paginas html*/
 body {
-    background-color:#c93537de;
+    background-color:$colorFondoPantalla;
 }
 /*Configura margen de footer*/
 footer{

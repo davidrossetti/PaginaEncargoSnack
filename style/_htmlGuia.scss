@@ -1,7 +1,8 @@
+@import "variables";
 
 
 /****GRID GUIA*****/
-#gridAreaGuia{
+#gridAreaGuia {
     display: grid;
     grid-template-areas:
         "notificacion notificacion notificacion notificacion"
@@ -16,66 +17,67 @@
     gap: 10px 10px;
     /*Configura tamaño margenes*/
 }
+
 /*Caja que conforma el area de texto e imagenes de la pagina guia*/
-.textoImagenesGuia{
+.textoImagenesGuia {
     grid-area: textoImagen;
     display: flex;
     flex-direction: column;
 }
 
 /*cambia posicion entre caja de texto e imagen*/
-.textoImagenInvertido{
+.textoImagenInvertido {
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: 6rem;
     flex-direction: row-reverse;
 }
 
 /*Modifica atributos generales de la seccion caja de texto e imagen de la pagina guia*/
-.textoImagen{
+.textoImagen {
     display: flex;
-    margin-top: 1.5rem;
-    
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+
 }
-
-
-
-/*Modifica los valores de las cajas de texto en la pagina guia*/
-.cajaTexto{
-    display: flex;
-    background-color: rgb(143, 158, 127);
-    padding: 1.5rem;
-    /*Configuracion padding(distancia entre letra y padding)*/
-    font-size: 1rem;
-    /*tamaño de la letra*/
-    font-family: 'Courier New', Courier, monospace;
-    /*fuente de letra*/
-    font-style: italic;
-    /*Letra cursiva*/
-    border: 0.5rem solid #000000;
-    /*tamaño y color del border*/
-    align-items: center;
-    /*Centraliza texto en el box*/
-    margin-left: 2rem;
-    /*agrega margen a la izquierda*/
-    margin-bottom: 5rem;
-    /*agrega margen inferior*/
-    margin-top: 2rem;
-    /*agrega margen superior*/
-}
-
-.cajaTexto1{
-@extend .textoImagen;
-background-color: #383737;
-}
-
-.cajaTexto2{
-    @extend .textoImagenInvertido;
-background-color: #767272;
-}
-
-.cajaTexto3{
+.cajaTexto1 {
     @extend .textoImagen;
-background-color: #d5d5d5;
+    background-color: $colorCasillaTexto1;
+    transition: all 1s;
+
+
+    &:hover {
+        font-size: 105%;
+        border: 0.5rem solid $colorBordeCasillaTexto;
+
+    }
+
+}
+
+.cajaTexto2 {
+    @extend .textoImagenInvertido;
+    background-color: $colorCasillaTexto2;
+    transition: all 1s;
+
+    &:hover {
+        font-size: 105%;
+        border: 0.5rem solid $colorBordeCasillaTexto;
+
+    }
+
+}
+
+.cajaTexto3 {
+    @extend .textoImagen;
+    background-color: $colorCasillaTexto3;
+    transition: all 1s;
+
+    &:hover {
+        font-size: 105%;
+        border: 0.5rem solid $colorBordeCasillaTexto;
+        ;
+    }
+
 }
 
 
@@ -88,29 +90,31 @@ background-color: #d5d5d5;
 
 /*****PAGINA GUIA*****/
 @media screen and (max-width:600px) {
-    #gridAreaGuia{
-       grid-template-columns: 1fr; 
-     grid-template-areas:
-        "notificacion"
-        "navegacion"
-        "textoImagen"
-       "casillasSus"
-        "contacto";
+    #gridAreaGuia {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "notificacion"
+            "navegacion"
+            "textoImagen"
+            "casillasSus"
+            "contacto";
     }
-   
-    .listaNavegacion{
-    flex-direction: column;
-    margin-left: 0%;
-    justify-content: center;   
- }
- .casillasSus{
-     flex-direction: column;
- }
 
- .enlacesContacto{
-     flex-direction: column;
- }
- .enlacesContacto div{
-    margin-top: 20px;
-}
+    .listaNavegacion {
+        flex-direction: column;
+        margin-left: 0%;
+        justify-content: center;
+    }
+
+    .casillasSus {
+        flex-direction: column;
+    }
+
+    .enlacesContacto {
+        flex-direction: column;
+    }
+
+    .enlacesContacto div {
+        margin-top: 20px;
+    }
 }

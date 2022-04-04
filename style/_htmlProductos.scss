@@ -1,3 +1,4 @@
+@import "variables";
 
 
 
@@ -36,7 +37,7 @@
 .listaNavegacion{
     grid-area: navegacion;
     display: flex;
-
+    
     
 }
 
@@ -46,9 +47,9 @@
 .listaProductos{
     grid-area: lista;
     display: flex;
-   flex-direction: column;
     justify-content: center;
     align-items: center;
+   margin-top: 2rem;
 }
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/

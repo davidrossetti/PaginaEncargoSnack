@@ -1,4 +1,27 @@
 @charset "UTF-8";
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 .alerta {
   background-color: #f94144;
@@ -9,7 +32,8 @@
   font-size: 30px;
   color: white;
   font-family: 'Fredoka', sans-serif;
-  border-bottom: 0.5rem #f78b8b dashed; }
+  border-bottom: 0.5rem #f78b8b dashed;
+  overflow: hidden; }
   .alerta div {
     animation-name: movimientoAlerta;
     animation-iteration-count: infinite;
@@ -48,7 +72,7 @@
   grid-area: navegacion;
   /*agrega una imagen de fondo*/
   background-image: url(../multimedia/snack-conjunto.jpeg);
-  border: #ffffff solid;
+  border: white solid;
   display: flex;
   justify-content: space-around;
   /*distribuye elementos de forma igualitaria*/
@@ -70,7 +94,7 @@
       color: white; }
   .listaNavegacion div {
     background-color: #fff9f9;
-    border: 0.1rem solid #000000;
+    border: 0.1rem solid black;
     /*configuracion del borde*/
     transition: all 0.5s;
     /*cambia el formato del boton al seleccionarlo*/ }
@@ -79,6 +103,29 @@
       border-radius: 20px; }
 
 /*Reset CSS*/
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 * {
   padding: 0;
   margin: 0; }
@@ -97,9 +144,32 @@ footer {
   margin-bottom: 0; }
 
 /*FormulariosSuscripcionGeneral:Posicion de los formularios general, aplica a todos los HTMLs */
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 .casillasSus {
   grid-area: casillasSus;
-  background-color: #90be6d;
+  background-color: #b10707;
   display: flex;
   align-items: center;
   /* Ordena en el centro del eje X*/
@@ -110,14 +180,16 @@ footer {
   /*Cambia color de la casilla suscripcion */
   /*Agregan margen entre titulo y casilla de form*/ }
   .casillasSus:hover {
-    background-color: #497070;
+    background-color: white;
     font-size: 20px;
-    color: #ffffff; }
+    color: #e4e4e4; }
   .casillasSus form p {
-    background-color: #497070;
-    margin-bottom: 1rem;
+    background-color: #362f2f;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     border-radius: 1rem;
-    color: aliceblue; }
+    color: #eaeafb;
+    max-width: 50rem; }
 
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
@@ -181,6 +253,29 @@ footer {
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /****GRID INDEX*****/
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 #gridAreaIndex {
   display: grid;
   grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "bloqueTexto bloqueTexto  video video" "borde borde borde borde"   "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
@@ -288,6 +383,29 @@ footer {
       .enlacesContacto div:hover {
         background-color: #000000; } }
 
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 /****GRID GALERIA*****/
 #gridAreaGaleria {
   display: grid;
@@ -327,6 +445,29 @@ footer {
   .enlacesContacto div {
     margin-top: 20px; } }
 
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 /****GRID GUIA*****/
 #gridAreaGuia {
   display: grid;
@@ -347,45 +488,35 @@ footer {
 /*cambia posicion entre caja de texto e imagen*/
 .textoImagenInvertido, .cajaTexto2 {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 6rem;
   flex-direction: row-reverse; }
 
 /*Modifica atributos generales de la seccion caja de texto e imagen de la pagina guia*/
 .textoImagen, .cajaTexto1, .cajaTexto3 {
   display: flex;
-  margin-top: 1.5rem; }
-
-/*Modifica los valores de las cajas de texto en la pagina guia*/
-.cajaTexto {
-  display: flex;
-  background-color: #8f9e7f;
-  padding: 1.5rem;
-  /*Configuracion padding(distancia entre letra y padding)*/
-  font-size: 1rem;
-  /*tamaño de la letra*/
-  font-family: 'Courier New', Courier, monospace;
-  /*fuente de letra*/
-  font-style: italic;
-  /*Letra cursiva*/
-  border: 0.5rem solid #000000;
-  /*tamaño y color del border*/
-  align-items: center;
-  /*Centraliza texto en el box*/
-  margin-left: 2rem;
-  /*agrega margen a la izquierda*/
-  margin-bottom: 5rem;
-  /*agrega margen inferior*/
-  margin-top: 2rem;
-  /*agrega margen superior*/ }
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
 
 .cajaTexto1 {
-  background-color: #383737; }
+  background-color: #c7a5a5;
+  transition: all 1s; }
+  .cajaTexto1:hover {
+    font-size: 105%;
+    border: 0.5rem solid #fdfafa; }
 
 .cajaTexto2 {
-  background-color: #767272; }
+  background-color: #a22a2a;
+  transition: all 1s; }
+  .cajaTexto2:hover {
+    font-size: 105%;
+    border: 0.5rem solid #fdfafa; }
 
 .cajaTexto3 {
-  background-color: #d5d5d5; }
+  background-color: #520e0e;
+  transition: all 1s; }
+  .cajaTexto3:hover {
+    font-size: 105%;
+    border: 0.5rem solid #fdfafa; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
@@ -406,6 +537,29 @@ footer {
   .enlacesContacto div {
     margin-top: 20px; } }
 
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 /****GRID PRODUCTOS*****/
 #gridAreaProductos {
   display: grid;
@@ -431,9 +585,9 @@ footer {
 .listaProductos {
   grid-area: lista;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 2rem; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
@@ -454,6 +608,29 @@ footer {
   .enlacesContacto div {
     margin-top: 20px; } }
 
+/******COLORES****************/
+/******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****/
+/************/
+/************/
+/*Color de fondo de pantalla*/
+/******FOOTER*********************************************************************/
+/*Colores:Footer-Casilla suscripcion*/
+/**Colores:Footer-Contactos*/
+/**Colores:Footer-Casilla contactos-titulo*/
+/*Colores:Footer-Contactos-botones*/
+/*Colores:Footer-Contactos-botones-Color de sombreado de iconos al seleccionar con el Mouse*/
+/****** FINAL FOOTER   *****************************/
+/********  NAV   ************************************************************************/
+/*Colores: NAV- Cartel de Alerta*/
+/*Colores: NAV- Barra de navegacion*/
+/****** FINAL NAV   *****************************/
+/********************************************************************************/
+/*SECCIONES SITIO WEB*/
+/********************************************************************************/
+/*INDEX*/
+/****** FINAL INDEX *****************************/
+/*GUIA DE COMPRA*/
+/****** FINAL GUIA DE COMPRA *****************************/
 /****GRID REPARTO*****/
 #gridAreaReparto {
   display: grid;

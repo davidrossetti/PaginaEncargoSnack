@@ -21,7 +21,7 @@
 
 .borde{
     grid-area: borde;
-    border-bottom: 1rem dotted black;
+    border-bottom: 1rem dotted $colorBordePuntos;
 }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
@@ -45,7 +45,7 @@ justify-content: space-around;}
     /*fuente de letra*/
     font-style: italic;
     /*Letra cursiva*/
-    border: 0.1rem solid #000000;
+    border: 0.1rem solid $colorBordeDescripcionVideo;
     /*tamaño y color del border*/
     align-items: center;
     /*Centraliza texto en el box*/
