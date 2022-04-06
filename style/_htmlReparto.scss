@@ -33,6 +33,16 @@
     grid-area: Mapa;
     display: flex;
     flex-direction: column;
+    h1{
+        display: flex;
+        background-color: $colorFondoTitulo ;
+        justify-content: center;
+        margin-top: 2rem;
+        color: $colorTitulo;
+        font-size: 5rem;
+        border-top: 1rem dotted $colorBordeTitulo ;
+        border-bottom: 1rem dotted $colorBordeTitulo ;
+    }
     
     
     img{

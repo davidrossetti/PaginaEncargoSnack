@@ -5,22 +5,22 @@
 /******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****//************//************/
 
 /*Color de fondo de pantalla*/
-$colorFondoPantalla:#f73131c2;
+$colorFondoPantalla:#dfbd9f8c;
 
 /******FOOTER*********************************************************************/
 
 /*Colores:Footer-Casilla suscripcion*/
-$colorFondoCasillaSus:#BCB8B1;
-$colorFondoCasillaSusMouse:#000000;
+$colorFondoCasillaSus:#c5beb1;
+$colorFondoCasillaSusMouse:#a7a092;
 $colorLetraFormuladrioMouse:rgb(228, 228, 228);
-$colorFondoTituloSus:rgb(54, 47, 47);
+$colorFondoTituloSus:#a7a092;
 $colorFondoLetra:rgb(234, 234, 251);
 
 /**Colores:Footer-Contactos*/
-$colorfondoContactos:#BCB8B1;
+$colorfondoContactos:#c5beb1;
 
 /**Colores:Footer-Casilla contactos-titulo*/
-$colorBordeContactosMouse:rgb(255, 255, 255);
+$colorBordeContactosMouse:#dd614ac4;
 $colorTituloContactos:aliceblue;
 
 /*Colores:Footer-Contactos-botones*/
@@ -39,15 +39,15 @@ $colorBotonMailMouse:orange;
 /*Colores: NAV- Cartel de Alerta*/
 $colorAlerta:#DD614A;
 $colorLetraAlerta:rgb(255, 255, 255);
-$colorBordeAlerta:#4392F1;
+$colorBordeAlerta:#dfbd9f8c;
 
 /*Colores: NAV- Barra de navegacion*/
-$colorBordeNavegacion:#4392F1 ;
-$colorLetraNav: rgb(0, 0, 0);
-$colorLetraMouse:white;
-$colorBotonNav:#85bcfe;
-$colorBordeBotonNav:black;
-$colorLetraFondoMouse:#4392F1;
+$colorBordeNavegacion:#ec4c30c4 ;
+$colorLetraNav: rgb(255, 255, 255);
+$colorLetraMouse:rgb(53, 51, 51);
+$colorBotonNav:#dd614ac4  ;
+$colorBordeBotonNav:#f06850c4;
+$colorLetraFondoMouse:#dd614ac4;
 $colorBotonNavMouseCostado:#BCB8B1;
 /****** FINAL NAV   *****************************/
 
@@ -56,15 +56,18 @@ $colorBotonNavMouseCostado:#BCB8B1;
 /********************************************************************************/
 
 /*INDEX*/
-$colorBordeDescripcionVideo:#456990;
-$colorTextoVideo:#85bcfe;
-$colorTextoVideoMouse: #b1ccec;
-$colorBordePuntos:#4392F1;
+$colorBordeDescripcionVideo:#c5beb1;
+$colorTextoVideo:#dd614ac4;
+$colorTextoVideoMouse: #c5beb1;
+$colorBordePuntos:#dd614ac4;
 /****** FINAL INDEX *****************************/
 
 /*GUIA DE COMPRA*/
-$colorCasillaTexto1:#c7a5a5;
-$colorCasillaTexto2:#a22a2a;
-$colorCasillaTexto3:#520e0e;
-$colorBordeCasillaTexto:rgb(253, 250, 250);
+$colorBordeCasillaTexto:#0d6efd;
+$colorFondoTitulo:#dd614ac4;
+$colorTitulo: white;
+$colorBordeTitulo:#c5beb1;
+$colorCasillaTexto1:#dd614ac4 ;
+$colorCasillaTexto2:#c5beb1 ;
+$colorCasillaTexto3:#dd614ac4 ;
 /****** FINAL GUIA DE COMPRA *****************************/

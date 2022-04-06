@@ -32,7 +32,7 @@
   font-size: 30px;
   color: white;
   font-family: 'Fredoka', sans-serif;
-  border-bottom: 0.5rem #4392F1 dashed;
+  border-bottom: 0.5rem #dfbd9f8c dashed;
   overflow: hidden; }
   .alerta div {
     animation-name: movimientoAlerta;
@@ -72,7 +72,7 @@
   grid-area: navegacion;
   /*agrega una imagen de fondo*/
   background-image: url(../multimedia/snack-conjunto.jpeg);
-  border: #4392F1 solid;
+  border: #ec4c30c4 solid;
   display: flex;
   justify-content: space-around;
   /*distribuye elementos de forma igualitaria*/
@@ -82,19 +82,19 @@
   /*Elimina el subrayado en los enlaces de la lista de navegacion*/
   /*Agrega fondo y borde a cada uno de los elementos de la barra de navegacion*/ }
   .listaNavegacion a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Fredoka', sans-serif;
     margin: 1rem;
     transition: all 0.5s; }
     .listaNavegacion a:hover {
-      background-color: #4392F1;
+      background-color: #dd614ac4;
       border-radius: 20px;
-      color: white; }
+      color: #353333; }
   .listaNavegacion div {
-    background-color: #85bcfe;
-    border: 0.1rem solid black;
+    background-color: #dd614ac4;
+    border: 0.1rem solid #f06850c4;
     /*configuracion del borde*/
     transition: all 0.5s;
     /*cambia el formato del boton al seleccionarlo*/ }
@@ -136,7 +136,7 @@ html {
 
 /*Configuracion general del color de las paginas html*/
 body {
-  background-color: #f73131c2; }
+  background-color: #dfbd9f8c; }
 
 /*Configura margen de footer*/
 footer {
@@ -169,7 +169,7 @@ footer {
 /****** FINAL GUIA DE COMPRA *****************************/
 .casillasSus {
   grid-area: casillasSus;
-  background-color: #BCB8B1;
+  background-color: #c5beb1;
   display: flex;
   align-items: center;
   /* Ordena en el centro del eje X*/
@@ -180,11 +180,11 @@ footer {
   /*Cambia color de la casilla suscripcion */
   /*Agregan margen entre titulo y casilla de form*/ }
   .casillasSus:hover {
-    background-color: #000000;
+    background-color: #a7a092;
     font-size: 20px;
     color: #e4e4e4; }
   .casillasSus form p {
-    background-color: #362f2f;
+    background-color: #a7a092;
     margin-top: 1rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
@@ -194,7 +194,7 @@ footer {
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
   grid-area: contacto;
-  background-color: #BCB8B1;
+  background-color: #c5beb1;
   display: flex;
   flex-direction: column;
   /*Ordena en columna texto-Contactos y enlaces*/
@@ -212,7 +212,7 @@ footer {
     margin-right: 90px; }
     .contacto:hover h3 {
       font-size: 40px;
-      border: 0.5rem solid white; }
+      border: 0.5rem solid #dd614ac4; }
   .contacto h3 {
     color: aliceblue;
     justify-content: center;
@@ -288,7 +288,7 @@ footer {
 
 .borde {
   grid-area: borde;
-  border-bottom: 1rem dotted #4392F1; }
+  border-bottom: 1rem dotted #dd614ac4; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo, .videoPrincipal {
@@ -299,7 +299,7 @@ footer {
   grid-area: bloqueTexto;
   display: flex;
   flex-direction: column;
-  background-color: #85bcfe;
+  background-color: #dd614ac4;
   padding: 1.5rem;
   /*Configuracion padding(distancia entre letra y padding)*/
   font-size: 1rem;
@@ -308,7 +308,7 @@ footer {
   /*fuente de letra*/
   font-style: italic;
   /*Letra cursiva*/
-  border: 0.1rem solid #456990;
+  border: 0.1rem solid #c5beb1;
   /*tamaño y color del border*/
   align-items: center;
   /*Centraliza texto en el box*/
@@ -321,7 +321,7 @@ footer {
   border-radius: 1.5rem;
   transition: all 1s; }
   .descripcionVideo:hover {
-    background-color: #b1ccec;
+    background-color: #c5beb1;
     /*Cambiar de color el recuadro de texto al posicionar el mouse*/ }
 
 /*Index_video:agrega atributos a video de youtube*/
@@ -423,6 +423,16 @@ footer {
     display: flex;
            justify-content: center;
     }*/
+.imagenesGaleria h1 {
+  display: flex;
+  background-color: #dd614ac4;
+  justify-content: center;
+  margin-top: 2rem;
+  color: white;
+  font-size: 5rem;
+  border-top: 1rem dotted #c5beb1;
+  border-bottom: 1rem dotted #c5beb1; }
+
 .imagenesGaleria img {
   height: 550px;
   width: 500px; }
@@ -484,6 +494,15 @@ footer {
   grid-area: textoImagen;
   display: flex;
   flex-direction: column; }
+  .textoImagenesGuia h1 {
+    display: flex;
+    background-color: #dd614ac4;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    font-size: 5rem;
+    border-top: 1rem dotted #c5beb1;
+    border-bottom: 1rem dotted #c5beb1; }
 
 /*cambia posicion entre caja de texto e imagen*/
 .textoImagenInvertido, .cajaTexto2 {
@@ -498,25 +517,25 @@ footer {
   margin-bottom: 3rem; }
 
 .cajaTexto1 {
-  background-color: #c7a5a5;
+  background-color: #dd614ac4;
   transition: all 1s; }
   .cajaTexto1:hover {
     font-size: 105%;
-    border: 0.5rem solid #fdfafa; }
+    border: 0.5rem solid #0d6efd; }
 
 .cajaTexto2 {
-  background-color: #a22a2a;
+  background-color: #c5beb1;
   transition: all 1s; }
   .cajaTexto2:hover {
     font-size: 105%;
-    border: 0.5rem solid #fdfafa; }
+    border: 0.5rem solid #0d6efd; }
 
 .cajaTexto3 {
-  background-color: #520e0e;
+  background-color: #dd614ac4;
   transition: all 1s; }
   .cajaTexto3:hover {
     font-size: 105%;
-    border: 0.5rem solid #fdfafa; }
+    border: 0.5rem solid #0d6efd; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
@@ -573,6 +592,15 @@ footer {
 
 .principal {
   grid-area: tituloProductos; }
+  .principal h1 {
+    display: flex;
+    background-color: #dd614ac4;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    font-size: 5rem;
+    border-top: 1rem dotted #c5beb1;
+    border-bottom: 1rem dotted #c5beb1; }
 
 .carousel-item {
   max-height: 30rem; }
@@ -655,6 +683,15 @@ footer {
   grid-area: Mapa;
   display: flex;
   flex-direction: column; }
+  .mapaReparto h1 {
+    display: flex;
+    background-color: #dd614ac4;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    font-size: 5rem;
+    border-top: 1rem dotted #c5beb1;
+    border-bottom: 1rem dotted #c5beb1; }
   .mapaReparto img {
     height: 450 px;
     width: 450px;
