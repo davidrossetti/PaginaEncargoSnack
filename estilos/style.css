@@ -24,7 +24,7 @@
 /****** FINAL GUIA DE COMPRA *****************************/
 /*Configura "la alerta de notificaciones" aplica a todos los HTML*/
 .alerta {
-  background-color: #f94144;
+  background-color: #DD614A;
   grid-area: notificacion;
   display: flex;
   justify-content: left;
@@ -32,7 +32,7 @@
   font-size: 30px;
   color: white;
   font-family: 'Fredoka', sans-serif;
-  border-bottom: 0.5rem #f78b8b dashed;
+  border-bottom: 0.5rem #4392F1 dashed;
   overflow: hidden; }
   .alerta div {
     animation-name: movimientoAlerta;
@@ -72,7 +72,7 @@
   grid-area: navegacion;
   /*agrega una imagen de fondo*/
   background-image: url(../multimedia/snack-conjunto.jpeg);
-  border: white solid;
+  border: #4392F1 solid;
   display: flex;
   justify-content: space-around;
   /*distribuye elementos de forma igualitaria*/
@@ -89,17 +89,17 @@
     margin: 1rem;
     transition: all 0.5s; }
     .listaNavegacion a:hover {
-      background-color: #df9393;
+      background-color: #4392F1;
       border-radius: 20px;
       color: white; }
   .listaNavegacion div {
-    background-color: #fff9f9;
+    background-color: #85bcfe;
     border: 0.1rem solid black;
     /*configuracion del borde*/
     transition: all 0.5s;
     /*cambia el formato del boton al seleccionarlo*/ }
     .listaNavegacion div:hover {
-      background-color: #9999ce;
+      background-color: #BCB8B1;
       border-radius: 20px; }
 
 /*Reset CSS*/
@@ -136,7 +136,7 @@ html {
 
 /*Configuracion general del color de las paginas html*/
 body {
-  background-color: #c93537de; }
+  background-color: #f73131c2; }
 
 /*Configura margen de footer*/
 footer {
@@ -169,7 +169,7 @@ footer {
 /****** FINAL GUIA DE COMPRA *****************************/
 .casillasSus {
   grid-area: casillasSus;
-  background-color: #b10707;
+  background-color: #BCB8B1;
   display: flex;
   align-items: center;
   /* Ordena en el centro del eje X*/
@@ -180,7 +180,7 @@ footer {
   /*Cambia color de la casilla suscripcion */
   /*Agregan margen entre titulo y casilla de form*/ }
   .casillasSus:hover {
-    background-color: white;
+    background-color: #000000;
     font-size: 20px;
     color: #e4e4e4; }
   .casillasSus form p {
@@ -194,7 +194,7 @@ footer {
 /*FooterGeneral:Se ordena los elementos de forma general en todas las paginas de HTML*/
 .contacto {
   grid-area: contacto;
-  background-color: #577590;
+  background-color: #BCB8B1;
   display: flex;
   flex-direction: column;
   /*Ordena en columna texto-Contactos y enlaces*/
@@ -288,7 +288,7 @@ footer {
 
 .borde {
   grid-area: borde;
-  border-bottom: 1rem dotted black; }
+  border-bottom: 1rem dotted #4392F1; }
 
 /*Index_TextoDescripcion:Centraliza y agrega atributos al texto de video*/
 .descripcionVideo, .videoPrincipal {
@@ -299,7 +299,7 @@ footer {
   grid-area: bloqueTexto;
   display: flex;
   flex-direction: column;
-  background-color: #f8961e;
+  background-color: #85bcfe;
   padding: 1.5rem;
   /*Configuracion padding(distancia entre letra y padding)*/
   font-size: 1rem;
@@ -308,7 +308,7 @@ footer {
   /*fuente de letra*/
   font-style: italic;
   /*Letra cursiva*/
-  border: 0.1rem solid #000000;
+  border: 0.1rem solid #456990;
   /*tamaño y color del border*/
   align-items: center;
   /*Centraliza texto en el box*/
@@ -321,7 +321,7 @@ footer {
   border-radius: 1.5rem;
   transition: all 1s; }
   .descripcionVideo:hover {
-    background-color: white;
+    background-color: #b1ccec;
     /*Cambiar de color el recuadro de texto al posicionar el mouse*/ }
 
 /*Index_video:agrega atributos a video de youtube*/

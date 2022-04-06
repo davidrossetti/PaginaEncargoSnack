@@ -5,19 +5,19 @@
 /******ELEMENTOS COMPARTIDOS EN TODAS LAS PAGINAS*****//************//************/
 
 /*Color de fondo de pantalla*/
-$colorFondoPantalla:#c93537de;
+$colorFondoPantalla:#f73131c2;
 
 /******FOOTER*********************************************************************/
 
 /*Colores:Footer-Casilla suscripcion*/
-$colorFondoCasillaSus:rgb(177, 7, 7);
-$colorFondoCasillaSusMouse:rgb(255, 255, 255);
+$colorFondoCasillaSus:#BCB8B1;
+$colorFondoCasillaSusMouse:#000000;
 $colorLetraFormuladrioMouse:rgb(228, 228, 228);
 $colorFondoTituloSus:rgb(54, 47, 47);
 $colorFondoLetra:rgb(234, 234, 251);
 
 /**Colores:Footer-Contactos*/
-$colorfondoContactos:rgb(87, 117, 144);
+$colorfondoContactos:#BCB8B1;
 
 /**Colores:Footer-Casilla contactos-titulo*/
 $colorBordeContactosMouse:rgb(255, 255, 255);
@@ -37,18 +37,18 @@ $colorBotonMailMouse:orange;
 /********  NAV   ************************************************************************/
 
 /*Colores: NAV- Cartel de Alerta*/
-$colorAlerta:rgb(249, 65, 68);
+$colorAlerta:#DD614A;
 $colorLetraAlerta:rgb(255, 255, 255);
-$colorBordeAlerta:rgb(247, 139, 139);
+$colorBordeAlerta:#4392F1;
 
 /*Colores: NAV- Barra de navegacion*/
-$colorBordeNavegacion:rgb(255, 255, 255);
+$colorBordeNavegacion:#4392F1 ;
 $colorLetraNav: rgb(0, 0, 0);
 $colorLetraMouse:white;
-$colorBotonNav:rgb(255, 249, 249);
+$colorBotonNav:#85bcfe;
 $colorBordeBotonNav:black;
-$colorLetraFondoMouse:rgb(223, 147, 147);
-$colorBotonNavMouseCostado:rgb(153, 153, 206);
+$colorLetraFondoMouse:#4392F1;
+$colorBotonNavMouseCostado:#BCB8B1;
 /****** FINAL NAV   *****************************/
 
 /********************************************************************************/
@@ -56,10 +56,10 @@ $colorBotonNavMouseCostado:rgb(153, 153, 206);
 /********************************************************************************/
 
 /*INDEX*/
-$colorBordeDescripcionVideo:#000000;
-$colorTextoVideo:rgb(248, 150, 30);
-$colorTextoVideoMouse: white;
-$colorBordePuntos:black;
+$colorBordeDescripcionVideo:#456990;
+$colorTextoVideo:#85bcfe;
+$colorTextoVideoMouse: #b1ccec;
+$colorBordePuntos:#4392F1;
 /****** FINAL INDEX *****************************/
 
 /*GUIA DE COMPRA*/
