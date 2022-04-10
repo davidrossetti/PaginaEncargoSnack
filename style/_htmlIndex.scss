@@ -4,21 +4,21 @@
     display: grid;
 
     grid-template-areas:
-        "notificacion notificacion notificacion notificacion"
-        "logo navegacion  navegacion navegacion"
-        "bloqueTexto bloqueTexto  video video"
-        "borde borde borde borde"  
-        "casillasSus casillasSus casillasSus  casillasSus"
-        "contacto contacto contacto contacto";
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    "notificacion notificacion"
+    "logo  navegacion"
+        "bloqueTexto  video"
+        "borde borde"  
+        "casillasSus casillasSus"
+        "contacto contacto";
+    grid-template-columns: 0.5fr 1fr;
     /*Configura tamaño columnas*/
-    grid-template-rows:0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1frr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2f 2f;
     /*Configura tamaño filas*/
-    gap: 60px 10px;
+    gap: 10px 10px;
     /*Configura tamaño margenes*/
 
 }
-
+/*Asociado al bordel del medio de la pagina*/
 .borde{
     grid-area: borde;
     border-bottom: 1rem dotted $colorBordePuntos;
@@ -87,7 +87,8 @@ justify-content: space-around;}
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
 
 /*****PAGINA INDEX*****/
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:900px) {
     #gridAreaIndex {
         grid-template-columns: 2fr;
         grid-template-columns: 2fr;
@@ -106,14 +107,12 @@ justify-content: space-around;}
             "casillasSus"
             "contacto";
     }
-/*Desahabilita el cartel de alerta,(rompe y crea un scroll horizontal)*/
+/*Desahabilita el cartel de alerta*/
     .alerta{
         display: none;
     }
-    /*Canmbia tañano de letra de cartel de alerta*/
     .logo{
            grid-area: logo;
-            display: none;
             flex-direction: column;
             border-radius: 5rem;
             width: 300px;
@@ -128,6 +127,14 @@ justify-content: space-around;}
         padding: 5.5rem;
         flex-direction: column;
         justify-content: center;
+        margin: 1rem;
+
+        div{
+            margin: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         
     }
     .videoPrincipal {
@@ -164,3 +171,6 @@ justify-content: space-around;}
 
 
 }
+
+
+

@@ -6,20 +6,20 @@
 #gridAreaProductos{
     display: grid;
     grid-template-areas:
-        "notificacion notificacion notificacion notificacion"
-        "logo navegacion  navegacion navegacion"
-        "tituloProductos tituloProductos tituloProductos tituloProductos"
-      "casillasSus casillasSus casillasSus  casillasSus"      
-        "contacto contacto contacto contacto";
-    grid-template-columns: 2fr 2fr 2fr 1fr;
+        "notificacion notificacion"
+        "logo  navegacion"
+        "tituloProductos tituloProductos"
+      "casillasSus casillasSus"      
+        "contacto contacto";
+    grid-template-columns: 2fr 2fr;
     /*Configura tamaño columnas*/
-    grid-template-rows:  0.1fr 0.1fr 6fr 0.01fr;
+    grid-template-rows: 1f 1fr 2fr 2fr 2fr 2f 2f;
     /*Configura tamaño filas*/
-    gap: 20px 20px;
+    gap: 10px 10px;
     /*Configura tamaño margenes*/
 }
 
-
+/*Configura Titulo*/
 .principal{
     grid-area: tituloProductos;
     h1{
@@ -38,11 +38,13 @@
 
 
 
+
+/*Configura Carusel*/
 .carousel-item{
     max-height: 30rem;
 }
 
-
+/*Configura lista de navegacion*/
 .listaNavegacion{
     grid-area: navegacion;
     display: flex;
@@ -66,13 +68,15 @@
 
 
 /*****PAGINA PRODUCTOS*****/
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     #gridAreaProductos{
        grid-template-columns: 1fr; 
+       
      grid-template-areas:
+        "logo"
         "notificacion"
         "navegacion"
-        "lista"
+        "tituloProductos"
        "casillasSus"
         "contacto";
     }
