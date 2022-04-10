@@ -2,128 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!--Descripcion y keywords-->
-    <meta name="description" content="Pagina de reparto.Imagenes de los productos para consumo.">
-    <meta name="keywords" content="imagenes,productos,consumo,fiestas,cumpleaños"> 
-    <!--Descripcion y keywords-->
-    <link rel="shortcut icon" href="../multimedia/icono-camion.png" type="image/x-icon">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Letra tipografica google-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
-        <!--Vinculo con archivo CSS-->
-    <link rel="stylesheet" href="../estilos/style.css">
-    <title>Distribuidora V.O.R.</title>
+  <!--Descripcion y keywords-->
+  <meta name="description" content="Pagina de reparto.Imagenes de los productos para consumo.">
+  <meta name="keywords" content="imagenes,productos,consumo,fiestas,cumpleaños">
+  <!--Descripcion y keywords-->
+  <link rel="shortcut icon" href="../multimedia/icono-camion.png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--Letra tipografica google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
+  <!--Vinculo con archivo CSS-->
+  <link rel="stylesheet" href="../estilos/style.css">
+  <title>Distribuidora V.O.R.</title>
 </head>
 
 <!--Se asigna un grid a esta pagina HTML-->
 
 <body id="gridAreaGaleria">
-   <!--Mensaje de alarma de notificacion superior-->
-   <header class="alerta">
+  <!--Mensaje de alarma de notificacion superior-->
+  <header class="alerta">
     <div>
-        Marzo: 10% de descuento en Hamburguesas.Hacer <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8EEeKnCbHd2Uk0k5uLScR05UbTyJ_SlBejPyH_Aoqzaq_wy10aAsOm23xyq2G7E-d-m-pDpA7BfFc/pub?output=xlsx">click</a> para ver oferta.
-      </div>
-</header>
+      Marzo: 10% de descuento en Hamburguesas.Hacer <a
+        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT8EEeKnCbHd2Uk0k5uLScR05UbTyJ_SlBejPyH_Aoqzaq_wy10aAsOm23xyq2G7E-d-m-pDpA7BfFc/pub?output=xlsx">click</a>
+      para ver oferta.
+    </div>
+  </header>
 
-<!--Logo-->
-<section><a href="../index.html"><img src="../multimedia/logo.JPG" class="logo"></a>
+  <!--Logo-->
+  <section><a href="../index.html"><img src="../multimedia/logo.JPG" class="logo"></a>
+  </section>
+  <!--Lista de navegacion-->
+  <nav class="listaNavegacion">
+    <div>
+      <a href="../index.html">Inicio</a>
+    </div>
+    <div>
+      <a href="guia.html">Guia de compra</a>
+    </div>
+    <div>
+
+      <a href="productos.html">Productos</a>
+    </div>
+    <div>
+
+      <a href="galeria.html">Galeria</a>
+
+    </div>
+    <div>
+      <a href="reparto.html">Zona de reparto</a>
+    </div>
+
+  </nav>
+  <!--Lista de imagenes-->
+
+  <section class="tituloImagenes">
+    <h1>Imagenes</h1>
+
 </section>
-<!--Lista de navegacion-->
-    <nav class="listaNavegacion">
-        <div>
-            <a href="../index.html">Inicio</a>
+
+
+  <section class="imagenesGaleria">
+    <!--BOOTSTRAP:SE INSERTA CARUSEL DE IMAGENES-->
+    
+    <div id="carouselWithControls" class="carousel slide pointer-event" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../multimedia/snack.jpeg" class="d-block w-200" alt="Slide 1">
         </div>
-        <div>
-            <a href="guia.html">Guia de compra</a>
+        <div class="carousel-item">
+          <img src="../multimedia/bolsas-pehuamar.jpg" class="d-block w-200" alt="Slide 2">
         </div>
-        <div>
-
-            <a href="productos.html">Productos</a>
+        <div class="carousel-item">
+          <img src="../multimedia/bolsas-krachitos.jpg" class="d-block w-200" alt="Slide 3">
         </div>
-        <div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
 
-            <a href="galeria.html">Galeria</a>
-        
-        </div>
-        <div>
-            <a href="reparto.html">Zona de reparto</a>
-        </div>
+  </section>
 
-    </nav>
-     <!--Lista de imagenes-->
+  <!--Formularios de inscripcion-->
+  <section class="casillasSus">
+    <form>
+      <p>Suscripcion por notificacion por whatsapp para ofertas</p>
+      <label for="telefono-cliente">Telefono</label>
+      <input type="text" name="telefono-cliente">
+      <input type="submit" value="Suscribirse">
+    </form>
 
+    <form>
+      <p>Suscripcion por notificacion por mail para ofertas</p>
+      <label for="email-cliente">email</label>
+      <input type="text" name="emal-cliente">
+      <input type="submit" value="Suscribirse">
+    </form>
+  </section>
 
-
-    <section class="imagenesGaleria">
-             <!--BOOTSTRAP:SE INSERTA CARUSEL DE IMAGENES-->
-             <h1>Imagenes</h1>
-
-        <div id="carouselWithControls" class="carousel slide pointer-event" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../multimedia/snack.jpeg" class="d-block w-200" alt="Slide 1">
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/bolsas-pehuamar.jpg" class="d-block w-200" alt="Slide 2">
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/bolsas-krachitos.jpg" class="d-block w-200" alt="Slide 3">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
-        
+  <!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
+  <footer class="contacto">
+    <h3>
+      Contactos
+    </h3>
+    <section class="enlacesContacto">
+      <div>
+        <a href="https://www.facebook.com/negocioGenerico" class="boton1"><img src="../multimedia/logoFacebook.png"
+            alt="mail" </a> </div> <div>
+          <a href="https://api.whatsapp.com/send?phone=5491111111111" class="boton2"><img
+              src="../multimedia/logoWhatsapp.png" alt="whatsapp"></a>
+      </div>
+      <div>
+        <a href="mailto:negocioGenerico@gmail.com" class="boton3"><img src="../multimedia/logoMail.png" alt="mail"></a>
+      </div>
     </section>
-
-    <!--Formularios de inscripcion-->
-    <section class="casillasSus">
-        <form>
-            <p>Suscripcion por notificacion por whatsapp para ofertas</p>
-            <label for="telefono-cliente">Telefono</label>
-            <input type="text" name="telefono-cliente">
-            <input type="submit" value="Suscribirse">
-        </form>
-
-        <form>
-            <p>Suscripcion por notificacion por mail para ofertas</p>
-            <label for="email-cliente">email</label>
-            <input type="text" name="emal-cliente">
-            <input type="submit" value="Suscribirse">
-        </form>
-    </section>
-
-     <!-- Pie de pagina:Titulo de "contactos" y enlaces de contactos-->
-     <footer class="contacto">
-        <h3>
-            Contactos
-        </h3>
-        <section class="enlacesContacto">
-            <div>
-                <a href="https://www.facebook.com/negocioGenerico" class="boton1"><img src="../multimedia/logoFacebook.png" alt="mail"</a>
-            </div>
-            <div>
-              <a href="https://api.whatsapp.com/send?phone=5491111111111" class="boton2"><img src="../multimedia/logoWhatsapp.png" alt="whatsapp"></a>
-            </div>
-            <div>
-                <a href="mailto:negocioGenerico@gmail.com" class="boton3"><img src="../multimedia/logoMail.png" alt="mail"></a>
-            </div>
-        </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

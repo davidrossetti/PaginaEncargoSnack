@@ -7,38 +7,41 @@
     display: grid;
     
     grid-template-areas:
-        "notificacion notificacion notificacion notificacion"
-        "logo navegacion  navegacion navegacion"
-        "imagenes imagenes  imagenes imagenes"
-        "casillasSus casillasSus casillasSus  casillasSus"
-        "contacto contacto contacto contacto";
-    grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
-    /*Configura tamaño columnas*/
-    grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
-    /*Configura tamaño filas*/
-    gap: 10px 10px;
-    /*Configura tamaño margenes*/
+        "notificacion notificacion"
+        "logo navegacion"
+        "TituloImagenes TituloImagenes"
+        "imagenes imagenes"
+        "casillasSus casillasSus"
+        "contacto contacto";
+        grid-template-columns: 0.5fr 1fr;
+        /*Configura tamaño columnas*/
+        grid-template-rows: 1fr 2fr 2fr 2fr 2f 2f;
+        /*Configura tamaño filas*/
+        gap: 10px 10px;
+        /*Configura tamaño margenes*/
     }
-    /*Modifica atributos de las imagenes, del apartado Galeria*/
-    /*.imagenesGaleria{
-    grid-area: imagenes;
-    display: flex;
-           justify-content: center;
-    }*/
+   
+/*Paremetros del titulo*/
+    .tituloImagenes{
+        grid-area: TituloImagenes;
+        display: flex;
+        background-color: $colorFondoTitulo ;
+        justify-content: center;
+        margin-top: 2rem;
+        color: $colorTitulo;
+        font-size: 5rem;
+        border-top: 1rem dotted $colorBordeTitulo ;
+        border-bottom: 1rem dotted $colorBordeTitulo ;
+    }
     
-    .imagenesGaleria{
-        h1{
-            display: flex;
-            background-color: $colorFondoTitulo ;
-            justify-content: center;
-            margin-top: 2rem;
-            color: $colorTitulo;
-            font-size: 5rem;
-            border-top: 1rem dotted $colorBordeTitulo ;
-            border-bottom: 1rem dotted $colorBordeTitulo ;
-        }
-    }
-
+    /*Paremetros imagenes*/
+.imagenesGaleria{
+    grid-area: imagenes;
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
     .imagenesGaleria img{
     height: 550px;
@@ -51,12 +54,14 @@
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     #gridAreaGaleria{
        grid-template-columns: 1fr; 
      grid-template-areas:
         "notificacion"
+        "logo"
         "navegacion"
+        "TituloImagenes"
         "imagenes"
        "casillasSus"
         "contacto";

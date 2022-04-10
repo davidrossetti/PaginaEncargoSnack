@@ -5,17 +5,31 @@
 #gridAreaReparto{
     display: grid;
     grid-template-areas:
-        "notificacion notificacion notificacion notificacion"
-        "logo navegacion  navegacion navegacion"
-        "TextoMapa TextoMapa  Mapa Mapa"
-        "casillasSus casillasSus casillasSus  casillasSus"
-        "contacto contacto contacto contacto";
-    grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+        "notificacion notificacion"
+        "logo navegacion"
+        "TituloReparto TituloReparto"
+        "Mapa TextoMapa"
+        "casillasSus casillasSus"
+        "contacto  contacto";
+    grid-template-columns: 0.5fr 1fr;
     /*Configura tamaño columnas*/
-    grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2f 2f;
     /*Configura tamaño filas*/
     gap: 10px 10px;
     /*Configura tamaño margenes*/
+}
+/*Paremetros del titulo*/
+.tituloReparto{
+    grid-area: TituloReparto;
+    display: flex;
+    background-color: $colorFondoTitulo ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: $colorTitulo;
+    font-size: 5rem;
+    border-top: 1rem dotted $colorBordeTitulo ;
+    border-bottom: 1rem dotted $colorBordeTitulo ;
 }
 
 /*Se modifica atributos en el texto de Mapa del HTML reparto*/
@@ -25,6 +39,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
+
 
 
 }
@@ -33,23 +49,19 @@
     grid-area: Mapa;
     display: flex;
     flex-direction: column;
-    h1{
-        display: flex;
-        background-color: $colorFondoTitulo ;
-        justify-content: center;
-        margin-top: 2rem;
-        color: $colorTitulo;
-        font-size: 5rem;
-        border-top: 1rem dotted $colorBordeTitulo ;
-        border-bottom: 1rem dotted $colorBordeTitulo ;
-    }
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+font-weight: bolder;
+text-align:left;
+
+
     
     
     img{
         height: 450 px;
         width: 450px;
-        justify-content: center;   
-        align-content: center;
+        margin: auto;
+
     }
 
 }
@@ -60,12 +72,14 @@
 
 
 /*****PAGINA REPARTO*****/
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     #gridAreaReparto{
        grid-template-columns: 1fr; 
      grid-template-areas:
         "notificacion"
+        "logo"
         "navegacion"
+        "TituloReparto"
         "Mapa"
         "TextoMapa"
        "casillasSus"

@@ -414,21 +414,17 @@ footer {
 /****GRID GALERIA*****/
 #gridAreaGaleria {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "imagenes imagenes  imagenes imagenes" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
-  grid-template-columns: 0.5fr 0.1fr 1.8fr 0.3fr;
+  grid-template-areas: "notificacion notificacion" "logo navegacion" "TituloImagenes TituloImagenes" "imagenes imagenes" "casillasSus casillasSus" "contacto contacto";
+  grid-template-columns: 0.5fr 1fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.07fr 0.07fr 0.5fr 0.2fr 0.11fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2f 2f;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
 
-/*Modifica atributos de las imagenes, del apartado Galeria*/
-/*.imagenesGaleria{
-    grid-area: imagenes;
-    display: flex;
-           justify-content: center;
-    }*/
-.imagenesGaleria h1 {
+/*Paremetros del titulo*/
+.tituloImagenes {
+  grid-area: TituloImagenes;
   display: flex;
   background-color: #dd614ac4;
   justify-content: center;
@@ -438,6 +434,14 @@ footer {
   border-top: 1rem dotted #c5beb1;
   border-bottom: 1rem dotted #c5beb1; }
 
+/*Paremetros imagenes*/
+.imagenesGaleria {
+  grid-area: imagenes;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 .imagenesGaleria img {
   height: 550px;
   width: 500px; }
@@ -445,10 +449,10 @@ footer {
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #gridAreaGaleria {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "imagenes" "casillasSus" "contacto"; }
+    grid-template-areas: "notificacion" "logo" "navegacion" "TituloImagenes" "imagenes" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
@@ -679,13 +683,26 @@ footer {
 /****GRID REPARTO*****/
 #gridAreaReparto {
   display: grid;
-  grid-template-areas: "notificacion notificacion notificacion notificacion" "logo navegacion  navegacion navegacion" "TextoMapa TextoMapa  Mapa Mapa" "casillasSus casillasSus casillasSus  casillasSus" "contacto contacto contacto contacto";
-  grid-template-columns: 1fr 1fr 1.8fr 0.3fr;
+  grid-template-areas: "notificacion notificacion" "logo navegacion" "TituloReparto TituloReparto" "Mapa TextoMapa" "casillasSus casillasSus" "contacto  contacto";
+  grid-template-columns: 0.5fr 1fr;
   /*Configura tamaño columnas*/
-  grid-template-rows: 0.2fr 0.2fr 1.3fr 0.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2f 2f;
   /*Configura tamaño filas*/
   gap: 10px 10px;
   /*Configura tamaño margenes*/ }
+
+/*Paremetros del titulo*/
+.tituloReparto {
+  grid-area: TituloReparto;
+  display: flex;
+  background-color: #dd614ac4;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: white;
+  font-size: 5rem;
+  border-top: 1rem dotted #c5beb1;
+  border-bottom: 1rem dotted #c5beb1; }
 
 /*Se modifica atributos en el texto de Mapa del HTML reparto*/
 .descripcionMapaDeReparto {
@@ -693,36 +710,31 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 2rem; }
 
 /*Se modifica atributos de la imagen del Mapa del HTML reparto*/
 .mapaReparto {
   grid-area: Mapa;
   display: flex;
-  flex-direction: column; }
-  .mapaReparto h1 {
-    display: flex;
-    background-color: #dd614ac4;
-    justify-content: center;
-    margin-top: 2rem;
-    color: white;
-    font-size: 5rem;
-    border-top: 1rem dotted #c5beb1;
-    border-bottom: 1rem dotted #c5beb1; }
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-align: left; }
   .mapaReparto img {
     height: 450 px;
     width: 450px;
-    justify-content: center;
-    align-content: center; }
+    margin: auto; }
 
 /***********************MEDIA QUERIES******************************************/
 /*************************Celulares******************************************/
 /*Se modifican posicion de los elementos para que queden acomodados en forma vertical*/
 /*****PAGINA REPARTO*****/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #gridAreaReparto {
     grid-template-columns: 1fr;
-    grid-template-areas: "notificacion" "navegacion" "Mapa" "TextoMapa" "casillasSus" "contacto"; }
+    grid-template-areas: "notificacion" "logo" "navegacion" "TituloReparto" "Mapa" "TextoMapa" "casillasSus" "contacto"; }
   .listaNavegacion {
     flex-direction: column;
     margin-left: 0%;
